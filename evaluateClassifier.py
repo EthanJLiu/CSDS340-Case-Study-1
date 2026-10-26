@@ -13,7 +13,7 @@ from classifySpam import predictTest
 
 desiredFPR = 0.01
 trainDataFilename = 'spamTrain1.csv'
-#testDataFilename = 'spamTrain2.csv'
+testDataFilename = 'spamTrain2.csv'
 #testDataFilename = 'spamTest.csv'
 
 def tprAtFPR(labels,outputs,desiredFPR):
