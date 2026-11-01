@@ -1,0 +1,12 @@
+{
+  "python": "3.12.10",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "runner_sha256": "beaa92e5d35ad658acfb28065dcf7cb54883df3507ab7627644922078b448f0f",
+  "note": "Source and package versions captured during the initial run. All model specs and split plans were frozen before performance results."
+}

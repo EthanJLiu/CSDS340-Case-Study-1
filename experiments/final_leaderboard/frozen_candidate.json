@@ -1,0 +1,16 @@
+{
+  "candidate": "bin_average_2_3_4",
+  "description": "Average binned logistic probabilities using 2, 3, and 4 positive-frequency bins; keep original C and 50/25/25 weights.",
+  "gate": "Retain baseline if candidate AUC OR TPR at FPR=.01 declines.",
+  "bootstrap": "2000 paired stratified resamples of fixed confirmation predictions; describes row uncertainty, not model-selection uncertainty.",
+  "python": "3.12.10",
+  "sklearn": "1.9.0",
+  "sha256": {
+    "experiments/final_leaderboard/baseline_classifier.py": "e9cb1babf48b08607c9b54618cc9b468beb77a3e6e2065d1a4a6be009a840c8e",
+    "experiments/final_leaderboard/split_plan.json": "bf146e9f7f4846efc3cf28f39a519c1906cec141a49a4df97f9c009cd2667d29",
+    "experiments/final_leaderboard/stability_experiments.py": "e0103aaabbd3c38c9e428a33d090441384c543ead94776aa442ffe6678c187ae",
+    "experiments/final_leaderboard/regularization_experiments.py": "d854ef7425b41ec2ad4aa2c49aac21f733f43d6aa9ff0ed5fdd0591b1f0642c3",
+    "spamTrain1.csv": "1cc074784a0c6dc05b2e784ae9f38e1a76886f168f904720d93a755342e15df5",
+    "spamTrain2.csv": "ba38823d745eaa33d84187e58f752dbb5ef14d3239a14b5bc92a75bb03c6e0bd"
+  }
+}

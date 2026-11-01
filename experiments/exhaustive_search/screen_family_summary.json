@@ -1,0 +1,3136 @@
+{
+  "families": [
+    {
+      "family": "additional:adam_mlp",
+      "attempted": 12,
+      "successful": 12,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "6e6fbe7f0d8a42b9",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "adam_mlp",
+            "transform": "log_binary",
+            "hidden_layer_sizes": [
+              64,
+              32
+            ],
+            "alpha": 1.0
+          },
+          "id": "6e6fbe7f0d8a42b9"
+        },
+        "auc": 0.905120842306772,
+        "tpr": 0.4606365159128978,
+        "pauc": 0.6750616189401796,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "4e92f0dd908a7631",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "adam_mlp",
+            "transform": "log_binary",
+            "hidden_layer_sizes": [
+              64,
+              32
+            ],
+            "alpha": 10.0
+          },
+          "id": "4e92f0dd908a7631"
+        },
+        "auc": 0.9041692404436357,
+        "tpr": 0.4690117252931323,
+        "pauc": 0.6706712021629486,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:complement_nb",
+      "attempted": 12,
+      "successful": 12,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "508423845d8c09b0",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "complement_nb",
+            "transform": "log",
+            "alpha": 10.0
+          },
+          "id": "508423845d8c09b0"
+        },
+        "auc": 0.8975135923248581,
+        "tpr": 0.390284757118928,
+        "pauc": 0.6423655979469404,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "7d42c7b234d4c4a5",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "complement_nb",
+            "transform": "log",
+            "alpha": 0.1
+          },
+          "id": "7d42c7b234d4c4a5"
+        },
+        "auc": 0.8974648992470659,
+        "tpr": 0.39363484087102174,
+        "pauc": 0.6416021687875876,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:elastic_logistic",
+      "attempted": 24,
+      "successful": 24,
+      "failed": 0,
+      "warnings": {
+        "The max_iter was reached which means the coef_ did not converge": 1
+      },
+      "best_auc": {
+        "id": "8cbcd1edd7d6d784",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "elastic_logistic",
+            "transform": "log_binary",
+            "C": 0.1,
+            "l1_ratio": 0.5
+          },
+          "id": "8cbcd1edd7d6d784"
+        },
+        "auc": 0.9102475277828789,
+        "tpr": 0.4447236180904522,
+        "pauc": 0.6706306537277449,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "7da8339c7253a664",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "elastic_logistic",
+            "transform": "log_binary",
+            "C": 0.01,
+            "l1_ratio": 0.1
+          },
+          "id": "7da8339c7253a664"
+        },
+        "auc": 0.9091595853019249,
+        "tpr": 0.4690117252931323,
+        "pauc": 0.6754251566351096,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:missingness_augmented_logistic",
+      "attempted": 6,
+      "successful": 6,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "4eda1a662ff10e56",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "missingness_augmented_logistic",
+            "fraction": 0.05,
+            "C": 0.01
+          },
+          "id": "4eda1a662ff10e56"
+        },
+        "auc": 0.910603682866158,
+        "tpr": 0.4698492462311557,
+        "pauc": 0.6762654879991592,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "0f7cef34ecc3cdf3",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "missingness_augmented_logistic",
+            "fraction": 0.15,
+            "C": 0.01
+          },
+          "id": "0f7cef34ecc3cdf3"
+        },
+        "auc": 0.9105897705582174,
+        "tpr": 0.4815745393634841,
+        "pauc": 0.6766346185817036,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:multinomial_nb",
+      "attempted": 12,
+      "successful": 12,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "3505a5318a96369e",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "multinomial_nb",
+            "transform": "log",
+            "alpha": 10.0
+          },
+          "id": "3505a5318a96369e"
+        },
+        "auc": 0.8975135923248581,
+        "tpr": 0.390284757118928,
+        "pauc": 0.6423655979469404,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "9c2991ecec689f76",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "multinomial_nb",
+            "transform": "log",
+            "alpha": 0.01
+          },
+          "id": "9c2991ecec689f76"
+        },
+        "auc": 0.8974648992470659,
+        "tpr": 0.39363484087102174,
+        "pauc": 0.6416021687875876,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:nu_svm",
+      "attempted": 12,
+      "successful": 12,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "ca63679c24996a52",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "nu_svm",
+            "transform": "log_binary",
+            "nu": 0.5,
+            "gamma": 0.003
+          },
+          "id": "ca63679c24996a52"
+        },
+        "auc": 0.9032955475049668,
+        "tpr": 0.4530988274706867,
+        "pauc": 0.6606473493362067,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "ca63679c24996a52",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "nu_svm",
+            "transform": "log_binary",
+            "nu": 0.5,
+            "gamma": 0.003
+          },
+          "id": "ca63679c24996a52"
+        },
+        "auc": 0.9032955475049668,
+        "tpr": 0.4530988274706867,
+        "pauc": 0.6606473493362067,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:nystroem_rbf",
+      "attempted": 8,
+      "successful": 8,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "2288de69099f618d",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "nystroem_rbf",
+            "transform": "log_binary",
+            "gamma": 0.003,
+            "C": 1.0,
+            "n_components": 256
+          },
+          "id": "2288de69099f618d"
+        },
+        "auc": 0.9066025031024446,
+        "tpr": 0.46817420435510887,
+        "pauc": 0.6625601169002998,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "2288de69099f618d",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "nystroem_rbf",
+            "transform": "log_binary",
+            "gamma": 0.003,
+            "C": 1.0,
+            "n_components": 256
+          },
+          "id": "2288de69099f618d"
+        },
+        "auc": 0.9066025031024446,
+        "tpr": 0.46817420435510887,
+        "pauc": 0.6625601169002998,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:polynomial_svm",
+      "attempted": 24,
+      "successful": 24,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "d4daf6dd4f1fa2f1",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "polynomial_svm",
+            "transform": "log_binary",
+            "degree": 3,
+            "C": 1.0,
+            "gamma": 0.003,
+            "coef0": 1.0
+          },
+          "id": "d4daf6dd4f1fa2f1"
+        },
+        "auc": 0.9098197243137057,
+        "tpr": 0.4648241206030151,
+        "pauc": 0.6703146555775366,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "7db2f2f379fe96e7",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "polynomial_svm",
+            "transform": "log_binary",
+            "degree": 3,
+            "C": 0.1,
+            "gamma": 0.003,
+            "coef0": 1.0
+          },
+          "id": "7db2f2f379fe96e7"
+        },
+        "auc": 0.9052516180014135,
+        "tpr": 0.4731993299832496,
+        "pauc": 0.6738941036506931,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:random_fourier",
+      "attempted": 8,
+      "successful": 8,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "b7f9ebfee32246f8",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "random_fourier",
+            "transform": "log_binary",
+            "gamma": 0.003,
+            "C": 1.0,
+            "n_components": 256
+          },
+          "id": "b7f9ebfee32246f8"
+        },
+        "auc": 0.9029171327289826,
+        "tpr": 0.4932998324958124,
+        "pauc": 0.6649091296983087,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "b7f9ebfee32246f8",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "random_fourier",
+            "transform": "log_binary",
+            "gamma": 0.003,
+            "C": 1.0,
+            "n_components": 256
+          },
+          "id": "b7f9ebfee32246f8"
+        },
+        "auc": 0.9029171327289826,
+        "tpr": 0.4932998324958124,
+        "pauc": 0.6649091296983087,
+        "warnings": []
+      }
+    },
+    {
+      "family": "additional:regularized_qda",
+      "attempted": 12,
+      "successful": 12,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "9effc10e681f4e15",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "regularized_qda",
+            "transform": "log_binary",
+            "reg_param": 0.95
+          },
+          "id": "9effc10e681f4e15"
+        },
+        "auc": 0.9040899402883743,
+        "tpr": 0.45226130653266333,
+        "pauc": 0.6713423486766654,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "9effc10e681f4e15",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "regularized_qda",
+            "transform": "log_binary",
+            "reg_param": 0.95
+          },
+          "id": "9effc10e681f4e15"
+        },
+        "auc": 0.9040899402883743,
+        "tpr": 0.45226130653266333,
+        "pauc": 0.6713423486766654,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:adaboost",
+      "attempted": 8,
+      "successful": 8,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "e99e4cb9c07cd586",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "depth": 1,
+            "family": "adaboost",
+            "learning_rate": 1.0,
+            "n_estimators": 300,
+            "transform": "raw"
+          },
+          "id": "e99e4cb9c07cd586"
+        },
+        "auc": 0.9027418376489313,
+        "tpr": 0.46817420435510887,
+        "pauc": 0.665915849468884,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "d7de2cdd4372094b",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "depth": 1,
+            "family": "adaboost",
+            "learning_rate": 1.0,
+            "n_estimators": 100,
+            "transform": "raw"
+          },
+          "id": "d7de2cdd4372094b"
+        },
+        "auc": 0.8985006705732427,
+        "tpr": 0.49080402010050256,
+        "pauc": 0.6564107509505882,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:adaline",
+      "attempted": 6,
+      "successful": 6,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "f9f41a09f0ddfc51",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.01,
+            "eta0": 0.001,
+            "family": "adaline",
+            "transform": "log_binary"
+          },
+          "id": "f9f41a09f0ddfc51"
+        },
+        "auc": 0.906207393556932,
+        "tpr": 0.42713567839195976,
+        "pauc": 0.6661269809763241,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "f9f41a09f0ddfc51",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.01,
+            "eta0": 0.001,
+            "family": "adaline",
+            "transform": "log_binary"
+          },
+          "id": "f9f41a09f0ddfc51"
+        },
+        "auc": 0.906207393556932,
+        "tpr": 0.42713567839195976,
+        "pauc": 0.6661269809763241,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:advanced_bins",
+      "attempted": 292,
+      "successful": 292,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "9d754aa22355580f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "bins": 8,
+            "family": "advanced_bins",
+            "missing": "prior",
+            "presence": true,
+            "spacing": "log"
+          },
+          "id": "9d754aa22355580f"
+        },
+        "auc": 0.9119740451983059,
+        "tpr": 0.47989949748743715,
+        "pauc": 0.6515337389686933,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "44415b9dee136ff5",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "bins": 12,
+            "family": "advanced_bins",
+            "missing": "prior",
+            "presence": true,
+            "spacing": "log"
+          },
+          "id": "44415b9dee136ff5"
+        },
+        "auc": 0.9106050740969521,
+        "tpr": 0.4983249581239531,
+        "pauc": 0.6565980987034484,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:baseline",
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "2744a1120f8bfa11",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "baseline",
+            "impute": "mean"
+          },
+          "id": "2744a1120f8bfa11"
+        },
+        "auc": 0.8238082717018091,
+        "tpr": 0.11941427278997481,
+        "pauc": 0.5274910233140641,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "2744a1120f8bfa11",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "baseline",
+            "impute": "mean"
+          },
+          "id": "2744a1120f8bfa11"
+        },
+        "auc": 0.8238082717018091,
+        "tpr": 0.11941427278997481,
+        "pauc": 0.5274910233140641,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:bernoulli",
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "2d54e57c5f76bc5a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "bernoulli",
+            "impute": "median",
+            "transform": "binary"
+          },
+          "id": "2d54e57c5f76bc5a"
+        },
+        "auc": 0.8908162072822585,
+        "tpr": 0.35428810720268006,
+        "pauc": 0.6190250936927524,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "2d54e57c5f76bc5a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "bernoulli",
+            "impute": "median",
+            "transform": "binary"
+          },
+          "id": "2d54e57c5f76bc5a"
+        },
+        "auc": 0.8908162072822585,
+        "tpr": 0.35428810720268006,
+        "pauc": 0.6190250936927524,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:binned",
+      "attempted": 30,
+      "successful": 30,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "df18871a77be570f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "bins": 5,
+            "family": "binned",
+            "presence": true,
+            "standardize": false
+          },
+          "id": "df18871a77be570f"
+        },
+        "auc": 0.9108972325637046,
+        "tpr": 0.46817420435510887,
+        "pauc": 0.6603229618545771,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "de0e9b59cb3d0f0e",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 3.0,
+            "bins": 3,
+            "family": "binned",
+            "standardize": false
+          },
+          "id": "de0e9b59cb3d0f0e"
+        },
+        "auc": 0.9079979075888858,
+        "tpr": 0.49329983249581244,
+        "pauc": 0.667425929124747,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:chi2_logistic",
+      "attempted": 18,
+      "successful": 18,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "e4c2892c63a66042",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "family": "chi2_logistic",
+            "transform": "log"
+          },
+          "id": "e4c2892c63a66042"
+        },
+        "auc": 0.9066609347957951,
+        "tpr": 0.46231155778894467,
+        "pauc": 0.6657662397252012,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "29bdb1c914facfa5",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "family": "chi2_logistic",
+            "transform": "log_binary"
+          },
+          "id": "29bdb1c914facfa5"
+        },
+        "auc": 0.9065245941779773,
+        "tpr": 0.4782244556113903,
+        "pauc": 0.6667715612738729,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:extra",
+      "attempted": 14,
+      "successful": 14,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "9b07af909bdb7d12",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "extra",
+            "impute": "mean",
+            "max_features": 0.3,
+            "min_samples_leaf": 2,
+            "n_estimators": 300
+          },
+          "id": "9b07af909bdb7d12"
+        },
+        "auc": 0.8928140147025271,
+        "tpr": 0.36432160804020103,
+        "pauc": 0.6167347922324747,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "2398f391968acaba",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "extra",
+            "impute": "mean",
+            "max_features": 0.3,
+            "min_samples_leaf": 10,
+            "n_estimators": 300
+          },
+          "id": "2398f391968acaba"
+        },
+        "auc": 0.8910095883626328,
+        "tpr": 0.43299832495812396,
+        "pauc": 0.6534129492071005,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:forest",
+      "attempted": 14,
+      "successful": 14,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "ce4fd243c0dcb8e2",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "forest",
+            "impute": "mean",
+            "max_features": 0.7,
+            "min_samples_leaf": 2,
+            "n_estimators": 400,
+            "transform": "log"
+          },
+          "id": "ce4fd243c0dcb8e2"
+        },
+        "auc": 0.8876448966872013,
+        "tpr": 0.32663316582914576,
+        "pauc": 0.5882879676042052,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "5393a4ed65e3d99a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "forest",
+            "impute": "mean",
+            "max_features": 0.3,
+            "min_samples_leaf": 2,
+            "n_estimators": 300
+          },
+          "id": "5393a4ed65e3d99a"
+        },
+        "auc": 0.8871162289854588,
+        "tpr": 0.3961474036850921,
+        "pauc": 0.6121737923830072,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:gb",
+      "attempted": 58,
+      "successful": 58,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "b91418ad7681b696",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "gb",
+            "impute": "median",
+            "indicators": true,
+            "learning_rate": 0.1,
+            "max_depth": 1,
+            "min_samples_leaf": 10,
+            "n_estimators": 500
+          },
+          "id": "b91418ad7681b696"
+        },
+        "auc": 0.9109194922564093,
+        "tpr": 0.41876046901172526,
+        "pauc": 0.657164378574397,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "c394a051f001aee8",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "gb",
+            "impute": "mean",
+            "indicators": true,
+            "learning_rate": 0.03,
+            "max_depth": 2,
+            "min_samples_leaf": 10,
+            "n_estimators": 500
+          },
+          "id": "c394a051f001aee8"
+        },
+        "auc": 0.905264834693957,
+        "tpr": 0.483249581239531,
+        "pauc": 0.6476942216214715,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:hist",
+      "attempted": 80,
+      "successful": 80,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "c7fd8218ac8820ea",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "hist",
+            "impute": "native",
+            "l2_regularization": 0.1,
+            "learning_rate": 0.05,
+            "max_iter": 400,
+            "max_leaf_nodes": 7,
+            "min_samples_leaf": 10
+          },
+          "id": "c7fd8218ac8820ea"
+        },
+        "auc": 0.9124171522062138,
+        "tpr": 0.45979899497487436,
+        "pauc": 0.6553452918778436,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "1df3988616ba3539",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "hist",
+            "impute": "native",
+            "l2_regularization": 0.1,
+            "learning_rate": 0.05,
+            "max_iter": 150,
+            "max_leaf_nodes": 7,
+            "min_samples_leaf": 10
+          },
+          "id": "1df3988616ba3539"
+        },
+        "auc": 0.9092618407652883,
+        "tpr": 0.4757118927973199,
+        "pauc": 0.6671169220840564,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:interactions",
+      "attempted": 30,
+      "successful": 30,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "8ed88f7d1d551ab0",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.001,
+            "family": "interactions",
+            "features": 60,
+            "interaction_only": false
+          },
+          "id": "8ed88f7d1d551ab0"
+        },
+        "auc": 0.9083610188261352,
+        "tpr": 0.4807370184254607,
+        "pauc": 0.6794995752621323,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "0eb35acd4c31ebe2",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "family": "interactions",
+            "features": 30,
+            "interaction_only": true
+          },
+          "id": "0eb35acd4c31ebe2"
+        },
+        "auc": 0.9062915630199725,
+        "tpr": 0.5050251256281407,
+        "pauc": 0.6687738150397949,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:iterative_logistic",
+      "attempted": 40,
+      "successful": 40,
+      "failed": 0,
+      "warnings": {
+        "[IterativeImputer] Early stopping criterion not reached.": 40
+      },
+      "best_auc": {
+        "id": "187fde84028dda36",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "187fde84028dda36"
+        },
+        "auc": 0.9119448293516307,
+        "tpr": 0.4824120603015076,
+        "pauc": 0.6819492600371989,
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      "best_tpr": {
+        "id": "753349500322bbe1",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "753349500322bbe1"
+        },
+        "auc": 0.9049079839952808,
+        "tpr": 0.4949748743718592,
+        "pauc": 0.668337569805879,
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      }
+    },
+    {
+      "family": "archive:kernel_svm",
+      "attempted": 56,
+      "successful": 56,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "4013fc796c557e50",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 30.0,
+            "family": "kernel_svm",
+            "gamma": 0.003,
+            "kernel": "laplacian",
+            "transform": "log"
+          },
+          "id": "4013fc796c557e50"
+        },
+        "auc": 0.9113980756495658,
+        "tpr": 0.4304857621440536,
+        "pauc": 0.6506822218294152,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "ec05221df0f9753a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 30.0,
+            "family": "kernel_svm",
+            "gamma": 0.01,
+            "kernel": "laplacian",
+            "transform": "log"
+          },
+          "id": "ec05221df0f9753a"
+        },
+        "auc": 0.9076702727368847,
+        "tpr": 0.4690117252931323,
+        "pauc": 0.6582270272211154,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:knn",
+      "attempted": 24,
+      "successful": 24,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "8f54115803d43c5f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "knn",
+            "n_neighbors": 31,
+            "p": 2,
+            "transform": "log",
+            "weights": "distance"
+          },
+          "id": "8f54115803d43c5f"
+        },
+        "auc": 0.8810038564917612,
+        "tpr": 0.3324958123953099,
+        "pauc": 0.6103197501388644,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "9188d013303db087",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "knn",
+            "n_neighbors": 31,
+            "p": 1,
+            "transform": "log",
+            "weights": "distance"
+          },
+          "id": "9188d013303db087"
+        },
+        "auc": 0.8728860248084276,
+        "tpr": 0.41624790619765495,
+        "pauc": 0.649889430010087,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:knn_binned",
+      "attempted": 64,
+      "successful": 64,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "c87b71f2e00d50f7",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "family": "knn_binned",
+            "indicators": false,
+            "neighbors": 7,
+            "presence": false
+          },
+          "id": "c87b71f2e00d50f7"
+        },
+        "auc": 0.8985911005748566,
+        "tpr": 0.4371859296482412,
+        "pauc": 0.6316775897159995,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "5d96f82365d853da",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "family": "knn_binned",
+            "indicators": false,
+            "neighbors": 3,
+            "presence": true
+          },
+          "id": "5d96f82365d853da"
+        },
+        "auc": 0.8922213503842581,
+        "tpr": 0.47068676716917923,
+        "pauc": 0.6535457802879403,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:knn_hist",
+      "attempted": 18,
+      "successful": 18,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "77393ed3fa6efd36",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "knn_hist",
+            "l2_regularization": 0.1,
+            "learning_rate": 0.05,
+            "max_iter": 250,
+            "max_leaf_nodes": 3,
+            "min_samples_leaf": 15,
+            "neighbors": 31
+          },
+          "id": "77393ed3fa6efd36"
+        },
+        "auc": 0.9088201249881745,
+        "tpr": 0.4907872696817421,
+        "pauc": 0.6607801804170466,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "2cf2f6f6b2bd3e57",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "knn_hist",
+            "l2_regularization": 10.0,
+            "learning_rate": 0.05,
+            "max_iter": 250,
+            "max_leaf_nodes": 15,
+            "min_samples_leaf": 15,
+            "neighbors": 7
+          },
+          "id": "2cf2f6f6b2bd3e57"
+        },
+        "auc": 0.9030959058860192,
+        "tpr": 0.4941373534338358,
+        "pauc": 0.6475725763158603,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:knn_logistic",
+      "attempted": 561,
+      "successful": 561,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "84473446e5e8d9df",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "family": "knn_logistic",
+            "neighbors": 31,
+            "presence_weight": 0.25,
+            "scale": 1000.0,
+            "transform": "log_binary",
+            "weights": "uniform"
+          },
+          "id": "84473446e5e8d9df"
+        },
+        "auc": 0.912353851205084,
+        "tpr": 0.4907872696817421,
+        "pauc": 0.677069465593716,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "db8d7ce44b50b6f3",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "family": "knn_logistic",
+            "indicators": false,
+            "neighbors": 3,
+            "pre_scale": true,
+            "transform": "log_binary",
+            "weights": "uniform"
+          },
+          "id": "db8d7ce44b50b6f3"
+        },
+        "auc": 0.9028614834972203,
+        "tpr": 0.5117252931323283,
+        "pauc": 0.6791318429014916,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:knn_svm",
+      "attempted": 48,
+      "successful": 48,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "5a4f3ed00f0c8b9e",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 1.0,
+            "family": "knn_svm",
+            "gamma": 0.003,
+            "neighbors": 31,
+            "transform": "log_binary"
+          },
+          "id": "5a4f3ed00f0c8b9e"
+        },
+        "auc": 0.9086684808316221,
+        "tpr": 0.4606365159128978,
+        "pauc": 0.6592617114297622,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "2c84905a52f51b37",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 30.0,
+            "family": "knn_svm",
+            "gamma": 0.003,
+            "neighbors": 31,
+            "transform": "log"
+          },
+          "id": "2c84905a52f51b37"
+        },
+        "auc": 0.9055493413913421,
+        "tpr": 0.4639865996649917,
+        "pauc": 0.6362665540035386,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:lda",
+      "attempted": 4,
+      "successful": 4,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "7501f1e7a8f4ab60",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "lda",
+            "transform": "log_binary"
+          },
+          "id": "7501f1e7a8f4ab60"
+        },
+        "auc": 0.9059667106295599,
+        "tpr": 0.43802345058626474,
+        "pauc": 0.6674035575742897,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "7501f1e7a8f4ab60",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "lda",
+            "transform": "log_binary"
+          },
+          "id": "7501f1e7a8f4ab60"
+        },
+        "auc": 0.9059667106295599,
+        "tpr": 0.43802345058626474,
+        "pauc": 0.6674035575742897,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:lda_projection",
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "4a271d6b8bfc0283",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 1.0,
+            "family": "lda_projection",
+            "transform": "log_binary"
+          },
+          "id": "4a271d6b8bfc0283"
+        },
+        "auc": 0.9041010701347268,
+        "tpr": 0.3986599664991625,
+        "pauc": 0.6543343774415576,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "4a271d6b8bfc0283",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 1.0,
+            "family": "lda_projection",
+            "transform": "log_binary"
+          },
+          "id": "4a271d6b8bfc0283"
+        },
+        "auc": 0.9041010701347268,
+        "tpr": 0.3986599664991625,
+        "pauc": 0.6543343774415576,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:linear_svm",
+      "attempted": 8,
+      "successful": 8,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "b1136f767c8f320f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "family": "linear_svm",
+            "transform": "log_binary"
+          },
+          "id": "b1136f767c8f320f"
+        },
+        "auc": 0.9094559174610595,
+        "tpr": 0.42964824120603023,
+        "pauc": 0.6723532631129515,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "fdd7c6861930a72a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 10.0,
+            "family": "linear_svm",
+            "transform": "binary"
+          },
+          "id": "fdd7c6861930a72a"
+        },
+        "auc": 0.9055298641602252,
+        "tpr": 0.4338358458961474,
+        "pauc": 0.6508975480025659,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:logistic",
+      "attempted": 137,
+      "successful": 137,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "9a096318f7125b46",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "family": "logistic",
+            "impute": "mean",
+            "indicators": false,
+            "scale": 1000.0,
+            "transform": "log_binary"
+          },
+          "id": "9a096318f7125b46"
+        },
+        "auc": 0.9106245513280689,
+        "tpr": 0.45644891122278053,
+        "pauc": 0.675404183306556,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "17350264259b87a0",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "family": "logistic",
+            "impute": "mean",
+            "indicators": false,
+            "scale": 10000.0,
+            "transform": "log_binary"
+          },
+          "id": "17350264259b87a0"
+        },
+        "auc": 0.9102614400908196,
+        "tpr": 0.4941373534338358,
+        "pauc": 0.6716919041525596,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:mlp",
+      "attempted": 36,
+      "successful": 36,
+      "failed": 0,
+      "warnings": {
+        "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html": 4,
+        "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html": 13
+      },
+      "best_auc": {
+        "id": "69ed6bdc386dce46",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 100.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "69ed6bdc386dce46"
+        },
+        "auc": 0.9103282191689344,
+        "tpr": 0.47068676716917923,
+        "pauc": 0.6755677752692745,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "cf19c6ac720ac7e8",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "cf19c6ac720ac7e8"
+        },
+        "auc": 0.9011419222357636,
+        "tpr": 0.4958123953098828,
+        "pauc": 0.6788955433997872,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:original",
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "978592e7270d4e1e",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "original"
+          },
+          "id": "978592e7270d4e1e"
+        },
+        "auc": 0.9145186063206397,
+        "tpr": 0.4815745393634841,
+        "pauc": 0.6674063540180969,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "978592e7270d4e1e",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "original"
+          },
+          "id": "978592e7270d4e1e"
+        },
+        "auc": 0.9145186063206397,
+        "tpr": 0.4815745393634841,
+        "pauc": 0.6674063540180969,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:pca_logistic",
+      "attempted": 3,
+      "successful": 3,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "8a52e18c85a8678f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "components": 0.95,
+            "family": "pca_logistic",
+            "transform": "log_binary"
+          },
+          "id": "8a52e18c85a8678f"
+        },
+        "auc": 0.9088771654507309,
+        "tpr": 0.4782244556113903,
+        "pauc": 0.6751608926953336,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "8a52e18c85a8678f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "components": 0.95,
+            "family": "pca_logistic",
+            "transform": "log_binary"
+          },
+          "id": "8a52e18c85a8678f"
+        },
+        "auc": 0.9088771654507309,
+        "tpr": 0.4782244556113903,
+        "pauc": 0.6751608926953336,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:pca_svm",
+      "attempted": 3,
+      "successful": 3,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "611723cfb26d757c",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 3.0,
+            "components": 0.95,
+            "family": "pca_svm",
+            "gamma": 0.01,
+            "transform": "log"
+          },
+          "id": "611723cfb26d757c"
+        },
+        "auc": 0.905240488155061,
+        "tpr": 0.39949748743718594,
+        "pauc": 0.6291677813990794,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "611723cfb26d757c",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 3.0,
+            "components": 0.95,
+            "family": "pca_svm",
+            "gamma": 0.01,
+            "transform": "log"
+          },
+          "id": "611723cfb26d757c"
+        },
+        "auc": 0.905240488155061,
+        "tpr": 0.39949748743718594,
+        "pauc": 0.6291677813990794,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:perceptron",
+      "attempted": 6,
+      "successful": 6,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "925487842a8a1653",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.0001,
+            "family": "perceptron",
+            "transform": "binary"
+          },
+          "id": "925487842a8a1653"
+        },
+        "auc": 0.8441390229107887,
+        "tpr": 0.1984924623115578,
+        "pauc": 0.5689183995739562,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "271510fea22649b6",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.0001,
+            "family": "perceptron",
+            "transform": "log_binary"
+          },
+          "id": "271510fea22649b6"
+        },
+        "auc": 0.8430858611996861,
+        "tpr": 0.2797319932998325,
+        "pauc": 0.5964591764087078,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:power",
+      "attempted": 30,
+      "successful": 30,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "2a6846ddf9681495",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "family": "power",
+            "power": 0.25
+          },
+          "id": "2a6846ddf9681495"
+        },
+        "auc": 0.9100750151644156,
+        "tpr": 0.4581239530988275,
+        "pauc": 0.6717716028010635,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "285b2e0c5bb5fd1f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "family": "power",
+            "power": 0.25
+          },
+          "id": "285b2e0c5bb5fd1f"
+        },
+        "auc": 0.9090329832996655,
+        "tpr": 0.4840871021775544,
+        "pauc": 0.6702069924909612,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:selected_logistic",
+      "attempted": 3,
+      "successful": 3,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "eac61029fd0a17dd",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "family": "selected_logistic",
+            "selected_features": 40,
+            "transform": "log_binary"
+          },
+          "id": "eac61029fd0a17dd"
+        },
+        "auc": 0.910127186319193,
+        "tpr": 0.4891122278056952,
+        "pauc": 0.6770666691499088,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "eac61029fd0a17dd",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "family": "selected_logistic",
+            "selected_features": 40,
+            "transform": "log_binary"
+          },
+          "id": "eac61029fd0a17dd"
+        },
+        "auc": 0.910127186319193,
+        "tpr": 0.4891122278056952,
+        "pauc": 0.6770666691499088,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:spline",
+      "attempted": 72,
+      "successful": 72,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "8c6380ac52758aaf",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "degree": 2,
+            "family": "spline",
+            "indicators": false,
+            "knots": 3,
+            "transform": "log"
+          },
+          "id": "8c6380ac52758aaf"
+        },
+        "auc": 0.9103963894778433,
+        "tpr": 0.4924623115577889,
+        "pauc": 0.6674245309028434,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "cdaff9100765c96a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "degree": 2,
+            "family": "spline",
+            "indicators": true,
+            "knots": 5,
+            "transform": "log"
+          },
+          "id": "cdaff9100765c96a"
+        },
+        "auc": 0.9015370317812762,
+        "tpr": 0.49999999999999994,
+        "pauc": 0.6500991632956236,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:svm",
+      "attempted": 125,
+      "successful": 125,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "6bf731d7d5a999b6",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 10.0,
+            "family": "svm",
+            "gamma": 0.001,
+            "impute": "mean",
+            "standardize": true,
+            "transform": "log_binary"
+          },
+          "id": "6bf731d7d5a999b6"
+        },
+        "auc": 0.909232624918613,
+        "tpr": 0.46566164154103856,
+        "pauc": 0.6658417437079945,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "a7bba30ec6212687",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 3.0,
+            "family": "svm",
+            "gamma": 0.001,
+            "impute": "mean",
+            "standardize": true,
+            "transform": "log_binary"
+          },
+          "id": "a7bba30ec6212687"
+        },
+        "auc": 0.9089369883748755,
+        "tpr": 0.4673366834170854,
+        "pauc": 0.6665436511035899,
+        "warnings": []
+      }
+    },
+    {
+      "family": "archive:tree",
+      "attempted": 8,
+      "successful": 8,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "d90f2586dea18694",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "tree",
+            "impute": "median",
+            "indicators": true,
+            "max_depth": null,
+            "min_samples_leaf": 15,
+            "transform": "raw"
+          },
+          "id": "d90f2586dea18694"
+        },
+        "auc": 0.8520725165139096,
+        "tpr": 0.15099772366104025,
+        "pauc": 0.5354265637339296,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "ba199244f5d2c1e9",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "family": "tree",
+            "impute": "median",
+            "indicators": true,
+            "max_depth": 4,
+            "min_samples_leaf": 15,
+            "transform": "raw"
+          },
+          "id": "ba199244f5d2c1e9"
+        },
+        "auc": 0.8271013149913466,
+        "tpr": 0.24480421430825627,
+        "pauc": 0.558113482159481,
+        "warnings": []
+      }
+    },
+    {
+      "family": "current:current_submission",
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "b339924a27dc96a7",
+        "spec": {
+          "source": "current",
+          "params": {
+            "family": "current_submission"
+          },
+          "id": "b339924a27dc96a7"
+        },
+        "auc": 0.9138215996928163,
+        "tpr": 0.49748743718592964,
+        "pauc": 0.6806461172230653,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "b339924a27dc96a7",
+        "spec": {
+          "source": "current",
+          "params": {
+            "family": "current_submission"
+          },
+          "id": "b339924a27dc96a7"
+        },
+        "auc": 0.9138215996928163,
+        "tpr": 0.49748743718592964,
+        "pauc": 0.6806461172230653,
+        "warnings": []
+      }
+    },
+    {
+      "family": "external:catboost",
+      "attempted": 48,
+      "successful": 48,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "d3e965a1cc19c0d1",
+        "spec": {
+          "source": "external",
+          "params": {
+            "family": "catboost",
+            "depth": 2,
+            "iterations": 500,
+            "l2_leaf_reg": 15.0,
+            "random_strength": 1.0,
+            "representation": "native"
+          },
+          "id": "d3e965a1cc19c0d1"
+        },
+        "auc": 0.9117542307328449,
+        "tpr": 0.4338358458961474,
+        "pauc": 0.6523656810013215,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "4b602c5001f30707",
+        "spec": {
+          "source": "external",
+          "params": {
+            "family": "catboost",
+            "depth": 4,
+            "iterations": 500,
+            "l2_leaf_reg": 15.0,
+            "random_strength": 1.0,
+            "representation": "mean_indicator"
+          },
+          "id": "4b602c5001f30707"
+        },
+        "auc": 0.9104283877861067,
+        "tpr": 0.4807370184254606,
+        "pauc": 0.6509758484291662,
+        "warnings": []
+      }
+    },
+    {
+      "family": "external:lightgbm",
+      "attempted": 48,
+      "successful": 48,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "5e59e415dd0f0d69",
+        "spec": {
+          "source": "external",
+          "params": {
+            "family": "lightgbm",
+            "num_leaves": 7,
+            "n_estimators": 200,
+            "reg_lambda": 1.0,
+            "min_child_samples": 10,
+            "representation": "native"
+          },
+          "id": "5e59e415dd0f0d69"
+        },
+        "auc": 0.9100680590104453,
+        "tpr": 0.4757118927973199,
+        "pauc": 0.6683054107020968,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "a99bcc66eabc15cf",
+        "spec": {
+          "source": "external",
+          "params": {
+            "family": "lightgbm",
+            "num_leaves": 7,
+            "n_estimators": 200,
+            "reg_lambda": 1.0,
+            "min_child_samples": 30,
+            "representation": "mean_indicator"
+          },
+          "id": "a99bcc66eabc15cf"
+        },
+        "auc": 0.9042012387518991,
+        "tpr": 0.4924623115577889,
+        "pauc": 0.6585458218151308,
+        "warnings": []
+      }
+    },
+    {
+      "family": "external:xgboost",
+      "attempted": 48,
+      "successful": 48,
+      "failed": 0,
+      "warnings": {},
+      "best_auc": {
+        "id": "94c00fe52ea42ee1",
+        "spec": {
+          "source": "external",
+          "params": {
+            "family": "xgboost",
+            "max_depth": 2,
+            "n_estimators": 500,
+            "reg_lambda": 1.0,
+            "min_child_weight": 1.0,
+            "colsample_bytree": 0.7,
+            "representation": "native"
+          },
+          "id": "94c00fe52ea42ee1"
+        },
+        "auc": 0.9105689020963066,
+        "tpr": 0.4614740368509213,
+        "pauc": 0.6687710185959878,
+        "warnings": []
+      },
+      "best_tpr": {
+        "id": "eaef281648088781",
+        "spec": {
+          "source": "external",
+          "params": {
+            "family": "xgboost",
+            "max_depth": 2,
+            "n_estimators": 200,
+            "reg_lambda": 10.0,
+            "min_child_weight": 1.0,
+            "colsample_bytree": 1.0,
+            "representation": "native"
+          },
+          "id": "eaef281648088781"
+        },
+        "auc": 0.9016865890916375,
+        "tpr": 0.4824120603015076,
+        "pauc": 0.6433583354984799,
+        "warnings": []
+      }
+    }
+  ],
+  "audit": {
+    "expected_models": 2076,
+    "successful_models": 2076,
+    "failed_models": 0,
+    "failures": [],
+    "models_with_warnings": 58,
+    "warnings": [
+      {
+        "id": "9175a2fa7e5c7a50",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "transform": "binary"
+          },
+          "id": "9175a2fa7e5c7a50"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "80910797454141e5",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "transform": "log_binary"
+          },
+          "id": "80910797454141e5"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "b3c2d23cbbe0f6db",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "transform": "binary"
+          },
+          "id": "b3c2d23cbbe0f6db"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "62f3890b3c1e0b6a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "transform": "log_binary"
+          },
+          "id": "62f3890b3c1e0b6a"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "cab5952570bd6c31",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "cab5952570bd6c31"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "d244e56a65a9bb6d",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "d244e56a65a9bb6d"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "845fcc2d57352c6f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32,
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "845fcc2d57352c6f"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "6145744cd73ecec8",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "6145744cd73ecec8"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "8129d49406b405e6",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "8129d49406b405e6"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "811862d4a6cb619e",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              8
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "811862d4a6cb619e"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "3d319b653f8b279f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "3d319b653f8b279f"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "e166958b06d103ff",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32,
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "e166958b06d103ff"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "f6753b4195af94bc",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "f6753b4195af94bc"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "7092e68a242e729a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "7092e68a242e729a"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "8a1e220dc8baf1b1",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32,
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "8a1e220dc8baf1b1"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "1470de501a03b85b",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32,
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "1470de501a03b85b"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "5d58bd8b9eb1debf",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "5d58bd8b9eb1debf"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "75d479cb78c6c8a2",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "75d479cb78c6c8a2"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "8f4737352f919a2d",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "8f4737352f919a2d"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "4a854e02077da506",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "4a854e02077da506"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "753349500322bbe1",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "753349500322bbe1"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "16d4c2390ce32159",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "16d4c2390ce32159"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "7ec2ee57c6d11096",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "7ec2ee57c6d11096"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "45ff935c88164906",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "45ff935c88164906"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "77e8544bcffbc6de",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "77e8544bcffbc6de"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "f699dbde15a7f0d3",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "f699dbde15a7f0d3"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "b79f40d6223fa5bc",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "b79f40d6223fa5bc"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "531e9b23a3093b93",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "531e9b23a3093b93"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "9d61ee92f7f7381a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "9d61ee92f7f7381a"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "7c6d91ae2e28b991",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "7c6d91ae2e28b991"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "cd1a6f15de6898d4",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "cd1a6f15de6898d4"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "84b99fca4eb79d98",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "84b99fca4eb79d98"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "61e23d3cfc5df71a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "61e23d3cfc5df71a"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "f69113bd36a3be60",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "f69113bd36a3be60"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "187fde84028dda36",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "187fde84028dda36"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "ed36a4904325a554",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "ed36a4904325a554"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "c3a2130d4c308c91",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "c3a2130d4c308c91"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "0a108742d01eaad5",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "0a108742d01eaad5"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "231e835b1d0ef6bb",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "231e835b1d0ef6bb"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "b9fcff4b3c48f3cc",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "b9fcff4b3c48f3cc"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "7c6003642763a353",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "7c6003642763a353"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "400704fc4c38d96f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "400704fc4c38d96f"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "599b6e2272512b5f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "599b6e2272512b5f"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "65a720ce3dfe5fad",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "65a720ce3dfe5fad"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "a8e5d80e6613a7e1",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "a8e5d80e6613a7e1"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "46640d9384607dcd",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "46640d9384607dcd"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "ebbb75f2723b98be",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "ebbb75f2723b98be"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "da9f1636fb739329",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "da9f1636fb739329"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "45f587f177238b2a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "45f587f177238b2a"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "76248c4e20943be2",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "76248c4e20943be2"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "ec497c2dbcbcdf42",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "ec497c2dbcbcdf42"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "5aae500b268ff953",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "5aae500b268ff953"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "38f6981d8d3f4c36",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "38f6981d8d3f4c36"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "0f1b14da6ad89f02",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "0f1b14da6ad89f02"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "5fc59608655f5851",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "5fc59608655f5851"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "70fc0bcf13cb5b4d",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "70fc0bcf13cb5b4d"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "1551832d397832c4",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "1551832d397832c4"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "4d8e2c2339ddd17e",
+        "spec": {
+          "source": "additional",
+          "params": {
+            "family": "elastic_logistic",
+            "transform": "log_binary",
+            "C": 10.0,
+            "l1_ratio": 0.9
+          },
+          "id": "4d8e2c2339ddd17e"
+        },
+        "warnings": [
+          "The max_iter was reached which means the coef_ did not converge"
+        ]
+      }
+    ],
+    "warning_counts": {
+      "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html": 4,
+      "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html": 13,
+      "[IterativeImputer] Early stopping criterion not reached.": 40,
+      "The max_iter was reached which means the coef_ did not converge": 1
+    }
+  },
+  "interpretation": "Exploratory maxima selected on the same development folds; these maxima are not independent performance estimates."
+}

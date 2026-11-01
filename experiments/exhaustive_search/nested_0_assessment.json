@@ -1,0 +1,219 @@
+{
+  "phase": "nested_0",
+  "training_rows": 2000,
+  "validation_rows": 1000,
+  "fitted_members": {
+    "b339924a27dc96a7": {
+      "seconds": 0.8602807079441845,
+      "warnings": []
+    },
+    "b9777ff48789c022": {
+      "seconds": 0.024069667095318437,
+      "warnings": []
+    },
+    "bc241d6cff8330be": {
+      "seconds": 1.2774714999832213,
+      "warnings": []
+    },
+    "8624f05b837d7c31": {
+      "seconds": 0.7637529589701444,
+      "warnings": []
+    }
+  },
+  "procedures": {
+    "compatible": {
+      "recipe": {
+        "method": "logit",
+        "model_ids": [
+          "b9777ff48789c022",
+          "bc241d6cff8330be",
+          "8624f05b837d7c31"
+        ],
+        "specs": [
+          {
+            "source": "archive",
+            "params": {
+              "C": 0.001,
+              "family": "interactions",
+              "features": 30,
+              "interaction_only": false
+            },
+            "id": "b9777ff48789c022"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "C": 3.0,
+              "family": "knn_svm",
+              "gamma": 0.003,
+              "neighbors": 7,
+              "transform": "log_binary"
+            },
+            "id": "bc241d6cff8330be"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "family": "knn_hist",
+              "l2_regularization": 0.1,
+              "learning_rate": 0.05,
+              "max_iter": 250,
+              "max_leaf_nodes": 15,
+              "min_samples_leaf": 15,
+              "neighbors": 31
+            },
+            "id": "8624f05b837d7c31"
+          }
+        ],
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "auc": 0.9145800274693939,
+        "tpr": 0.4950442143093583,
+        "pauc": 0.6702412610402249,
+        "objective": 0.9393322381848619,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.9093119309114803,
+            "tpr": 0.4490566037735849,
+            "pauc": 0.6448401776082138
+          },
+          {
+            "auc": 0.9164401027506421,
+            "tpr": 0.4398496240601504,
+            "pauc": 0.6728198772347855
+          },
+          {
+            "auc": 0.9179880487460593,
+            "tpr": 0.5962264150943396,
+            "pauc": 0.693063728277675
+          }
+        ]
+      },
+      "selection_counts": {
+        "singleton_models": 1932,
+        "probability_singletons": 1912,
+        "decision_singletons": 20,
+        "pool_models": 24,
+        "weight_vectors": 14476,
+        "blend_methods": 2,
+        "blend_evaluations": 28952,
+        "total_recipe_evaluations": 30884,
+        "auc_guard_passes": 5419
+      },
+      "outer_metrics": {
+        "auc": 0.9119100485817793,
+        "tpr": 0.535175879396985,
+        "pauc": 0.6678453956958199
+      },
+      "delta_from_baseline": {
+        "auc": 0.0009975124793402124,
+        "tpr": -0.045226130653266305,
+        "pauc": -0.007625902262107687
+      }
+    },
+    "all_libraries": {
+      "recipe": {
+        "method": "logit",
+        "model_ids": [
+          "b9777ff48789c022",
+          "bc241d6cff8330be",
+          "8624f05b837d7c31"
+        ],
+        "specs": [
+          {
+            "source": "archive",
+            "params": {
+              "C": 0.001,
+              "family": "interactions",
+              "features": 30,
+              "interaction_only": false
+            },
+            "id": "b9777ff48789c022"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "C": 3.0,
+              "family": "knn_svm",
+              "gamma": 0.003,
+              "neighbors": 7,
+              "transform": "log_binary"
+            },
+            "id": "bc241d6cff8330be"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "family": "knn_hist",
+              "l2_regularization": 0.1,
+              "learning_rate": 0.05,
+              "max_iter": 250,
+              "max_leaf_nodes": 15,
+              "min_samples_leaf": 15,
+              "neighbors": 31
+            },
+            "id": "8624f05b837d7c31"
+          }
+        ],
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "auc": 0.9145800274693939,
+        "tpr": 0.4950442143093583,
+        "pauc": 0.6702412610402249,
+        "objective": 0.9393322381848619,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.9093119309114803,
+            "tpr": 0.4490566037735849,
+            "pauc": 0.6448401776082138
+          },
+          {
+            "auc": 0.9164401027506421,
+            "tpr": 0.4398496240601504,
+            "pauc": 0.6728198772347855
+          },
+          {
+            "auc": 0.9179880487460593,
+            "tpr": 0.5962264150943396,
+            "pauc": 0.693063728277675
+          }
+        ]
+      },
+      "selection_counts": {
+        "singleton_models": 2076,
+        "probability_singletons": 2056,
+        "decision_singletons": 20,
+        "pool_models": 24,
+        "weight_vectors": 14476,
+        "blend_methods": 2,
+        "blend_evaluations": 28952,
+        "total_recipe_evaluations": 31028,
+        "auc_guard_passes": 8413
+      },
+      "outer_metrics": {
+        "auc": 0.9119100485817793,
+        "tpr": 0.535175879396985,
+        "pauc": 0.6678453956958199
+      },
+      "delta_from_baseline": {
+        "auc": 0.0009975124793402124,
+        "tpr": -0.045226130653266305,
+        "pauc": -0.007625902262107687
+      }
+    }
+  },
+  "selection_artifact": "selection_nested_0.json",
+  "baseline": {
+    "auc": 0.910912536102439,
+    "tpr": 0.5804020100502513,
+    "pauc": 0.6754712979579276
+  }
+}

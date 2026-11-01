@@ -1,0 +1,24 @@
+{
+  "candidate_sha256": "a564359bed827fe31977731d723837ffa0295ed4f9d56adc0d5067e5ed35e673",
+  "recipe_ids": [
+    "52149895e26f72aa",
+    "c7fd8218ac8820ea",
+    "b9777ff48789c022"
+  ],
+  "screen_fold": 0,
+  "reference_max_abs_difference": 0.0,
+  "deterministic": true,
+  "batch_independent": true,
+  "inputs_unchanged": true,
+  "all_missing_column": true,
+  "empty_test": true,
+  "single_class": true,
+  "rejects_infinite_or_other_negative": true,
+  "edge_warnings": [
+    "Features [ 0 25 30 55] are constant.",
+    "invalid value encountered in divide"
+  ],
+  "seconds": 1.5404058750718832,
+  "compatibility_guard": "Columns wholly missing in training are constant-zero only for HGB to avoid sklearn1.9 empty-threshold bug. Ordinary dataset predictions remain identical.",
+  "note": "Implementation parity and mechanical checks on existing screenfold0 only. No new partition scores or model selection."
+}

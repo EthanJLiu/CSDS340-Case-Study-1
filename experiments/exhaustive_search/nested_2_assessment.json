@@ -1,0 +1,216 @@
+{
+  "phase": "nested_2",
+  "training_rows": 2000,
+  "validation_rows": 1000,
+  "fitted_members": {
+    "b339924a27dc96a7": {
+      "seconds": 0.8949097080621868,
+      "warnings": []
+    },
+    "95139a05a2e1149c": {
+      "seconds": 0.9597620000131428,
+      "warnings": []
+    },
+    "d0dd64cf71a6324b": {
+      "seconds": 0.30570141691714525,
+      "warnings": []
+    },
+    "235bf85375458fff": {
+      "seconds": 0.3711823329795152,
+      "warnings": []
+    }
+  },
+  "procedures": {
+    "compatible": {
+      "recipe": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7",
+          "95139a05a2e1149c",
+          "d0dd64cf71a6324b"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "C": 0.03,
+              "family": "knn_logistic",
+              "neighbors": 15,
+              "presence_weight": 0.25,
+              "scale": 10000.0,
+              "transform": "log_binary",
+              "weights": "uniform"
+            },
+            "id": "95139a05a2e1149c"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "family": "gb",
+              "impute": "median",
+              "indicators": true,
+              "learning_rate": 0.1,
+              "max_depth": 2,
+              "min_samples_leaf": 10,
+              "n_estimators": 150
+            },
+            "id": "d0dd64cf71a6324b"
+          }
+        ],
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "auc": 0.9086734143538693,
+        "tpr": 0.5125360571239419,
+        "pauc": 0.6694771569439307,
+        "objective": 0.9343002172100664,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.9357364122782315,
+            "tpr": 0.5735849056603773,
+            "pauc": 0.7305309991240347
+          },
+          {
+            "auc": 0.9039618997618735,
+            "tpr": 0.5338345864661654,
+            "pauc": 0.6559777493584209
+          },
+          {
+            "auc": 0.8863219310215028,
+            "tpr": 0.43018867924528303,
+            "pauc": 0.6219227223493367
+          }
+        ]
+      },
+      "selection_counts": {
+        "singleton_models": 1932,
+        "probability_singletons": 1912,
+        "decision_singletons": 20,
+        "pool_models": 24,
+        "weight_vectors": 14476,
+        "blend_methods": 2,
+        "blend_evaluations": 28952,
+        "total_recipe_evaluations": 30884,
+        "auc_guard_passes": 1237
+      },
+      "outer_metrics": {
+        "auc": 0.9222566319971952,
+        "tpr": 0.5728643216080402,
+        "pauc": 0.6945444429446184
+      },
+      "delta_from_baseline": {
+        "auc": 0.004052655303093511,
+        "tpr": 0.015075376884422176,
+        "pauc": 0.004010100419458151
+      }
+    },
+    "all_libraries": {
+      "recipe": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7",
+          "95139a05a2e1149c",
+          "235bf85375458fff"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "C": 0.03,
+              "family": "knn_logistic",
+              "neighbors": 15,
+              "presence_weight": 0.25,
+              "scale": 10000.0,
+              "transform": "log_binary",
+              "weights": "uniform"
+            },
+            "id": "95139a05a2e1149c"
+          },
+          {
+            "source": "external",
+            "params": {
+              "family": "catboost",
+              "depth": 4,
+              "iterations": 200,
+              "l2_leaf_reg": 3.0,
+              "random_strength": 1.0,
+              "representation": "native"
+            },
+            "id": "235bf85375458fff"
+          }
+        ],
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "auc": 0.9098822642540605,
+        "tpr": 0.5138081051685819,
+        "pauc": 0.6668049086075785,
+        "objective": 0.9355726695124896,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.9347883225382522,
+            "tpr": 0.5924528301886792,
+            "pauc": 0.7272762007729439
+          },
+          {
+            "auc": 0.9061462884143026,
+            "tpr": 0.5225563909774437,
+            "pauc": 0.6597324838807881
+          },
+          {
+            "auc": 0.8887121818096269,
+            "tpr": 0.42641509433962266,
+            "pauc": 0.6134060411690032
+          }
+        ]
+      },
+      "selection_counts": {
+        "singleton_models": 2076,
+        "probability_singletons": 2056,
+        "decision_singletons": 20,
+        "pool_models": 24,
+        "weight_vectors": 14476,
+        "blend_methods": 2,
+        "blend_evaluations": 28952,
+        "total_recipe_evaluations": 31028,
+        "auc_guard_passes": 3853
+      },
+      "outer_metrics": {
+        "auc": 0.9212048615168867,
+        "tpr": 0.5728643216080402,
+        "pauc": 0.6924471100892533
+      },
+      "delta_from_baseline": {
+        "auc": 0.0030008848227850438,
+        "tpr": 0.015075376884422176,
+        "pauc": 0.0019127675640930875
+      }
+    }
+  },
+  "selection_artifact": "selection_nested_2.json",
+  "baseline": {
+    "auc": 0.9182039766941017,
+    "tpr": 0.5577889447236181,
+    "pauc": 0.6905343425251602
+  }
+}

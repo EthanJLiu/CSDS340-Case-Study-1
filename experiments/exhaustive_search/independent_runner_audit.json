@@ -1,0 +1,73 @@
+{
+  "grouped_prediction_parity": [
+    {
+      "source": "archive",
+      "family": "interactions",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "archive",
+      "family": "knn_svm",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "archive",
+      "family": "mlp",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "archive",
+      "family": "iterative_logistic",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "archive",
+      "family": "kernel_svm",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "archive",
+      "family": "selected_logistic",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "archive",
+      "family": "linear_svm",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "additional",
+      "family": "regularized_qda",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "additional",
+      "family": "elastic_logistic",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "additional",
+      "family": "nystroem_rbf",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "additional",
+      "family": "adam_mlp",
+      "max_abs_difference": 0.0
+    },
+    {
+      "source": "additional",
+      "family": "missingness_augmented_logistic",
+      "max_abs_difference": 0.0
+    }
+  ],
+  "split_integrity": true,
+  "deduplication_aliases_match_exact_parameters": true,
+  "spec_identifiers_valid": true,
+  "frozen_source_hashes_valid": true,
+  "limitations": [
+    "Runner search.py is not included in frozen provenance; library/data files are.",
+    "Runtime library versions are recorded incompletely and not enforced for cache resume.",
+    "SIGALRM may not interrupt native code until it returns control to Python."
+  ]
+}

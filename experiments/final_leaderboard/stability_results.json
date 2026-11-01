@@ -1,0 +1,265 @@
+{
+  "protocol": "Ten fixed seed-340/341 development folds; confirmation untouched",
+  "bagging_fraction": 0.8,
+  "folds": [
+    {
+      "seed": 340,
+      "fold": 0,
+      "baseline_seconds": 0.8276998328510672,
+      "total_seconds": 3.54430341697298,
+      "metrics": {
+        "baseline": {
+          "auc": 0.9020782375746684,
+          "tpr": 0.42786069651741293
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9032097039884192,
+          "tpr": 0.4129353233830846
+        },
+        "positive_median_boundary": {
+          "auc": 0.9018785670310655,
+          "tpr": 0.39303482587064675
+        },
+        "subsample_bagging": {
+          "auc": 0.9028602805371138,
+          "tpr": 0.42786069651741293
+        }
+      }
+    },
+    {
+      "seed": 340,
+      "fold": 1,
+      "baseline_seconds": 0.7301853329408914,
+      "total_seconds": 3.3348184160422534,
+      "metrics": {
+        "baseline": {
+          "auc": 0.9206143197058188,
+          "tpr": 0.5422885572139303
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9222449624785769,
+          "tpr": 0.5174129353233831
+        },
+        "positive_median_boundary": {
+          "auc": 0.9158721442952462,
+          "tpr": 0.5074626865671642
+        },
+        "subsample_bagging": {
+          "auc": 0.9207973510374549,
+          "tpr": 0.5124378109452736
+        }
+      }
+    },
+    {
+      "seed": 340,
+      "fold": 2,
+      "baseline_seconds": 0.6768339581321925,
+      "total_seconds": 3.3281428331974894,
+      "metrics": {
+        "baseline": {
+          "auc": 0.9071864756485133,
+          "tpr": 0.48756218905472637
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9100317808948568,
+          "tpr": 0.5174129353233831
+        },
+        "positive_median_boundary": {
+          "auc": 0.9035757666516914,
+          "tpr": 0.47761194029850745
+        },
+        "subsample_bagging": {
+          "auc": 0.9060882876586965,
+          "tpr": 0.4925373134328358
+        }
+      }
+    },
+    {
+      "seed": 340,
+      "fold": 3,
+      "baseline_seconds": 0.6945023750886321,
+      "total_seconds": 3.2539586250204593,
+      "metrics": {
+        "baseline": {
+          "auc": 0.9215166666666667,
+          "tpr": 0.6
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9235333333333333,
+          "tpr": 0.64
+        },
+        "positive_median_boundary": {
+          "auc": 0.92105,
+          "tpr": 0.63
+        },
+        "subsample_bagging": {
+          "auc": 0.9223166666666667,
+          "tpr": 0.62
+        }
+      }
+    },
+    {
+      "seed": 340,
+      "fold": 4,
+      "baseline_seconds": 0.7314887091051787,
+      "total_seconds": 3.337282792199403,
+      "metrics": {
+        "baseline": {
+          "auc": 0.9348499999999998,
+          "tpr": 0.61
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9344333333333332,
+          "tpr": 0.605
+        },
+        "positive_median_boundary": {
+          "auc": 0.9325166666666667,
+          "tpr": 0.565
+        },
+        "subsample_bagging": {
+          "auc": 0.9350333333333333,
+          "tpr": 0.6
+        }
+      }
+    },
+    {
+      "seed": 341,
+      "fold": 0,
+      "baseline_seconds": 0.7961783329956234,
+      "total_seconds": 3.3794003329239786,
+      "metrics": {
+        "baseline": {
+          "auc": 0.8989833441488212,
+          "tpr": 0.5920398009950248
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9004642340138771,
+          "tpr": 0.582089552238806
+        },
+        "positive_median_boundary": {
+          "auc": 0.8990166225727549,
+          "tpr": 0.5970149253731343
+        },
+        "subsample_bagging": {
+          "auc": 0.898800312817185,
+          "tpr": 0.5920398009950248
+        }
+      }
+    },
+    {
+      "seed": 341,
+      "fold": 1,
+      "baseline_seconds": 0.7438470830675215,
+      "total_seconds": 3.2710184999741614,
+      "metrics": {
+        "baseline": {
+          "auc": 0.9385347509941929,
+          "tpr": 0.31840796019900497
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9377360688197807,
+          "tpr": 0.36318407960199006
+        },
+        "positive_median_boundary": {
+          "auc": 0.9384349157223915,
+          "tpr": 0.417910447761194
+        },
+        "subsample_bagging": {
+          "auc": 0.9398326095276127,
+          "tpr": 0.31840796019900497
+        }
+      }
+    },
+    {
+      "seed": 341,
+      "fold": 2,
+      "baseline_seconds": 0.6881301251705736,
+      "total_seconds": 3.2794922501780093,
+      "metrics": {
+        "baseline": {
+          "auc": 0.9121116823907219,
+          "tpr": 0.48756218905472637
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9132265095925057,
+          "tpr": 0.48258706467661694
+        },
+        "positive_median_boundary": {
+          "auc": 0.9085841694537347,
+          "tpr": 0.5074626865671642
+        },
+        "subsample_bagging": {
+          "auc": 0.9131433135326711,
+          "tpr": 0.4925373134328358
+        }
+      }
+    },
+    {
+      "seed": 341,
+      "fold": 3,
+      "baseline_seconds": 0.6854039579629898,
+      "total_seconds": 3.3358385828323662,
+      "metrics": {
+        "baseline": {
+          "auc": 0.92045,
+          "tpr": 0.555
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9216166666666666,
+          "tpr": 0.555
+        },
+        "positive_median_boundary": {
+          "auc": 0.9173333333333333,
+          "tpr": 0.505
+        },
+        "subsample_bagging": {
+          "auc": 0.9190833333333335,
+          "tpr": 0.56
+        }
+      }
+    },
+    {
+      "seed": 341,
+      "fold": 4,
+      "baseline_seconds": 0.6917579169385135,
+      "total_seconds": 3.21734045795165,
+      "metrics": {
+        "baseline": {
+          "auc": 0.9221166666666666,
+          "tpr": 0.535
+        },
+        "bin_average_2_3_4": {
+          "auc": 0.9237666666666667,
+          "tpr": 0.545
+        },
+        "positive_median_boundary": {
+          "auc": 0.9162333333333335,
+          "tpr": 0.575
+        },
+        "subsample_bagging": {
+          "auc": 0.92315,
+          "tpr": 0.525
+        }
+      }
+    }
+  ],
+  "bagging_members": 5,
+  "means": {
+    "baseline": {
+      "auc": 0.9178442143796068,
+      "tpr": 0.5155721393034826
+    },
+    "bin_average_2_3_4": {
+      "auc": 0.9190263259788016,
+      "tpr": 0.5220621890547263
+    },
+    "positive_median_boundary": {
+      "auc": 0.915449551906022,
+      "tpr": 0.5175497512437811
+    },
+    "subsample_bagging": {
+      "auc": 0.9181105488444066,
+      "tpr": 0.5140820895522389
+    }
+  }
+}

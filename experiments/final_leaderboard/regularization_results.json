@@ -1,0 +1,322 @@
+[
+  {
+    "index": 0,
+    "seed": 340,
+    "fold": 0,
+    "model": "baseline",
+    "auc": 0.9020782375746684,
+    "tpr": 0.42786069651741293
+  },
+  {
+    "index": 0,
+    "seed": 340,
+    "fold": 0,
+    "model": "size_scaled_C",
+    "auc": 0.9021281552105692,
+    "tpr": 0.42786069651741293
+  },
+  {
+    "index": 0,
+    "seed": 340,
+    "fold": 0,
+    "model": "interaction_half_C",
+    "auc": 0.9020615983627016,
+    "tpr": 0.42786069651741293
+  },
+  {
+    "index": 0,
+    "seed": 340,
+    "fold": 0,
+    "model": "interaction_double_C",
+    "auc": 0.9020116807268008,
+    "tpr": 0.43781094527363185
+  },
+  {
+    "index": 1,
+    "seed": 340,
+    "fold": 1,
+    "model": "baseline",
+    "auc": 0.9206143197058188,
+    "tpr": 0.5422885572139303
+  },
+  {
+    "index": 1,
+    "seed": 340,
+    "fold": 1,
+    "model": "size_scaled_C",
+    "auc": 0.9206475981297526,
+    "tpr": 0.5522388059701493
+  },
+  {
+    "index": 1,
+    "seed": 340,
+    "fold": 1,
+    "model": "interaction_half_C",
+    "auc": 0.9209803823690911,
+    "tpr": 0.5472636815920398
+  },
+  {
+    "index": 1,
+    "seed": 340,
+    "fold": 1,
+    "model": "interaction_double_C",
+    "auc": 0.9200485864989436,
+    "tpr": 0.5323383084577115
+  },
+  {
+    "index": 2,
+    "seed": 340,
+    "fold": 2,
+    "model": "baseline",
+    "auc": 0.9071864756485133,
+    "tpr": 0.48756218905472637
+  },
+  {
+    "index": 2,
+    "seed": 340,
+    "fold": 2,
+    "model": "size_scaled_C",
+    "auc": 0.9071199188006457,
+    "tpr": 0.48258706467661694
+  },
+  {
+    "index": 2,
+    "seed": 340,
+    "fold": 2,
+    "model": "interaction_half_C",
+    "auc": 0.906837052197208,
+    "tpr": 0.48258706467661694
+  },
+  {
+    "index": 2,
+    "seed": 340,
+    "fold": 2,
+    "model": "interaction_double_C",
+    "auc": 0.9069868051049103,
+    "tpr": 0.4925373134328358
+  },
+  {
+    "index": 3,
+    "seed": 340,
+    "fold": 3,
+    "model": "baseline",
+    "auc": 0.9215166666666667,
+    "tpr": 0.6
+  },
+  {
+    "index": 3,
+    "seed": 340,
+    "fold": 3,
+    "model": "size_scaled_C",
+    "auc": 0.9213666666666667,
+    "tpr": 0.595
+  },
+  {
+    "index": 3,
+    "seed": 340,
+    "fold": 3,
+    "model": "interaction_half_C",
+    "auc": 0.9212,
+    "tpr": 0.6
+  },
+  {
+    "index": 3,
+    "seed": 340,
+    "fold": 3,
+    "model": "interaction_double_C",
+    "auc": 0.9211666666666667,
+    "tpr": 0.595
+  },
+  {
+    "index": 4,
+    "seed": 340,
+    "fold": 4,
+    "model": "baseline",
+    "auc": 0.9348499999999998,
+    "tpr": 0.61
+  },
+  {
+    "index": 4,
+    "seed": 340,
+    "fold": 4,
+    "model": "size_scaled_C",
+    "auc": 0.9350333333333333,
+    "tpr": 0.62
+  },
+  {
+    "index": 4,
+    "seed": 340,
+    "fold": 4,
+    "model": "interaction_half_C",
+    "auc": 0.9353999999999999,
+    "tpr": 0.63
+  },
+  {
+    "index": 4,
+    "seed": 340,
+    "fold": 4,
+    "model": "interaction_double_C",
+    "auc": 0.9342999999999999,
+    "tpr": 0.565
+  },
+  {
+    "index": 5,
+    "seed": 341,
+    "fold": 0,
+    "model": "baseline",
+    "auc": 0.8989833441488212,
+    "tpr": 0.5920398009950248
+  },
+  {
+    "index": 5,
+    "seed": 341,
+    "fold": 0,
+    "model": "size_scaled_C",
+    "auc": 0.8983344148821112,
+    "tpr": 0.5920398009950248
+  },
+  {
+    "index": 5,
+    "seed": 341,
+    "fold": 0,
+    "model": "interaction_half_C",
+    "auc": 0.8988502304530858,
+    "tpr": 0.5920398009950248
+  },
+  {
+    "index": 5,
+    "seed": 341,
+    "fold": 0,
+    "model": "interaction_double_C",
+    "auc": 0.8993327676001266,
+    "tpr": 0.5970149253731343
+  },
+  {
+    "index": 6,
+    "seed": 341,
+    "fold": 1,
+    "model": "baseline",
+    "auc": 0.9385347509941929,
+    "tpr": 0.31840796019900497
+  },
+  {
+    "index": 6,
+    "seed": 341,
+    "fold": 1,
+    "model": "size_scaled_C",
+    "auc": 0.9390006489292667,
+    "tpr": 0.31343283582089554
+  },
+  {
+    "index": 6,
+    "seed": 341,
+    "fold": 1,
+    "model": "interaction_half_C",
+    "auc": 0.9390838449891014,
+    "tpr": 0.31840796019900497
+  },
+  {
+    "index": 6,
+    "seed": 341,
+    "fold": 1,
+    "model": "interaction_double_C",
+    "auc": 0.9375197590642108,
+    "tpr": 0.3482587064676617
+  },
+  {
+    "index": 7,
+    "seed": 341,
+    "fold": 2,
+    "model": "baseline",
+    "auc": 0.9121116823907219,
+    "tpr": 0.48756218905472637
+  },
+  {
+    "index": 7,
+    "seed": 341,
+    "fold": 2,
+    "model": "size_scaled_C",
+    "auc": 0.9121449608146558,
+    "tpr": 0.48756218905472637
+  },
+  {
+    "index": 7,
+    "seed": 341,
+    "fold": 2,
+    "model": "interaction_half_C",
+    "auc": 0.9124611058420274,
+    "tpr": 0.48756218905472637
+  },
+  {
+    "index": 7,
+    "seed": 341,
+    "fold": 2,
+    "model": "interaction_double_C",
+    "auc": 0.9118454549992513,
+    "tpr": 0.48756218905472637
+  },
+  {
+    "index": 8,
+    "seed": 341,
+    "fold": 3,
+    "model": "baseline",
+    "auc": 0.92045,
+    "tpr": 0.555
+  },
+  {
+    "index": 8,
+    "seed": 341,
+    "fold": 3,
+    "model": "size_scaled_C",
+    "auc": 0.9203999999999999,
+    "tpr": 0.555
+  },
+  {
+    "index": 8,
+    "seed": 341,
+    "fold": 3,
+    "model": "interaction_half_C",
+    "auc": 0.9208666666666668,
+    "tpr": 0.555
+  },
+  {
+    "index": 8,
+    "seed": 341,
+    "fold": 3,
+    "model": "interaction_double_C",
+    "auc": 0.91905,
+    "tpr": 0.565
+  },
+  {
+    "index": 9,
+    "seed": 341,
+    "fold": 4,
+    "model": "baseline",
+    "auc": 0.9221166666666666,
+    "tpr": 0.535
+  },
+  {
+    "index": 9,
+    "seed": 341,
+    "fold": 4,
+    "model": "size_scaled_C",
+    "auc": 0.922,
+    "tpr": 0.54
+  },
+  {
+    "index": 9,
+    "seed": 341,
+    "fold": 4,
+    "model": "interaction_half_C",
+    "auc": 0.9221166666666667,
+    "tpr": 0.545
+  },
+  {
+    "index": 9,
+    "seed": 341,
+    "fold": 4,
+    "model": "interaction_double_C",
+    "auc": 0.92215,
+    "tpr": 0.53
+  }
+]

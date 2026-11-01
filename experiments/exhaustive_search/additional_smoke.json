@@ -1,0 +1,42 @@
+[
+  {
+    "family": "regularized_qda",
+    "seconds": 0.012434041127562523
+  },
+  {
+    "family": "multinomial_nb",
+    "seconds": 0.002328542061150074
+  },
+  {
+    "family": "complement_nb",
+    "seconds": 0.0017749159596860409
+  },
+  {
+    "family": "elastic_logistic",
+    "seconds": 0.00490370811894536
+  },
+  {
+    "family": "polynomial_svm",
+    "seconds": 0.0131267081014812
+  },
+  {
+    "family": "nu_svm",
+    "seconds": 0.015872207935899496
+  },
+  {
+    "family": "random_fourier",
+    "seconds": 0.005620290990918875
+  },
+  {
+    "family": "nystroem_rbf",
+    "seconds": 0.02290320792235434
+  },
+  {
+    "family": "adam_mlp",
+    "seconds": 0.051576332887634635
+  },
+  {
+    "family": "missingness_augmented_logistic",
+    "seconds": 0.003886417020112276
+  }
+]

@@ -1,0 +1,4248 @@
+{
+  "phase": "nested_2",
+  "procedures": {
+    "compatible": {
+      "chosen": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7",
+          "95139a05a2e1149c",
+          "d0dd64cf71a6324b"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "C": 0.03,
+              "family": "knn_logistic",
+              "neighbors": 15,
+              "presence_weight": 0.25,
+              "scale": 10000.0,
+              "transform": "log_binary",
+              "weights": "uniform"
+            },
+            "id": "95139a05a2e1149c"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "family": "gb",
+              "impute": "median",
+              "indicators": true,
+              "learning_rate": 0.1,
+              "max_depth": 2,
+              "min_samples_leaf": 10,
+              "n_estimators": 150
+            },
+            "id": "d0dd64cf71a6324b"
+          }
+        ],
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "auc": 0.9086734143538693,
+        "tpr": 0.5125360571239419,
+        "pauc": 0.6694771569439307,
+        "objective": 0.9343002172100664,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.9357364122782315,
+            "tpr": 0.5735849056603773,
+            "pauc": 0.7305309991240347
+          },
+          {
+            "auc": 0.9039618997618735,
+            "tpr": 0.5338345864661654,
+            "pauc": 0.6559777493584209
+          },
+          {
+            "auc": 0.8863219310215028,
+            "tpr": 0.43018867924528303,
+            "pauc": 0.6219227223493367
+          }
+        ]
+      },
+      "baseline": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          }
+        ],
+        "weights": [
+          1.0
+        ],
+        "auc": 0.9063662718365095,
+        "tpr": 0.5113112971107013,
+        "pauc": 0.6786043036339992,
+        "objective": 0.9319318366920446,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.93297662630245,
+            "tpr": 0.6,
+            "pauc": 0.7504088545609866
+          },
+          {
+            "auc": 0.8970712316951981,
+            "tpr": 0.5075187969924813,
+            "pauc": 0.6625402903743023
+          },
+          {
+            "auc": 0.8890509575118807,
+            "tpr": 0.42641509433962266,
+            "pauc": 0.6228637659667083
+          }
+        ]
+      },
+      "top_recipes": [
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "auc": 0.9086734143538693,
+          "tpr": 0.5125360571239419,
+          "pauc": 0.6694771569439307,
+          "objective": 0.9343002172100664,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9357364122782315,
+              "tpr": 0.5735849056603773,
+              "pauc": 0.7305309991240347
+            },
+            {
+              "auc": 0.9039618997618735,
+              "tpr": 0.5338345864661654,
+              "pauc": 0.6559777493584209
+            },
+            {
+              "auc": 0.8863219310215028,
+              "tpr": 0.43018867924528303,
+              "pauc": 0.6219227223493367
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "auc": 0.9085578785125551,
+          "tpr": 0.5137797323497423,
+          "pauc": 0.6718338833919716,
+          "objective": 0.9342468651300422,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.936280859851685,
+              "tpr": 0.569811320754717,
+              "pauc": 0.7319366946437812
+            },
+            {
+              "auc": 0.9031837698985619,
+              "tpr": 0.5451127819548872,
+              "pauc": 0.6611740758053104
+            },
+            {
+              "auc": 0.8862090057874182,
+              "tpr": 0.42641509433962266,
+              "pauc": 0.622390879726823
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9085029866483131,
+          "tpr": 0.5125455147302218,
+          "pauc": 0.671829444544532,
+          "objective": 0.9341302623848242,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9353984793016051,
+              "tpr": 0.5622641509433962,
+              "pauc": 0.7394651847428262
+            },
+            {
+              "auc": 0.9025181407383797,
+              "tpr": 0.5263157894736842,
+              "pauc": 0.6559683271889796
+            },
+            {
+              "auc": 0.8875923399049546,
+              "tpr": 0.4490566037735849,
+              "pauc": 0.6200548217017899
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.6815251904406654,
+            0.3184748095593345
+          ],
+          "auc": 0.9083747970740127,
+          "tpr": 0.5150565091975222,
+          "pauc": 0.6715226404699242,
+          "objective": 0.9341276225338888,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9358866047122876,
+              "tpr": 0.5735849056603773,
+              "pauc": 0.7409086170550491
+            },
+            {
+              "auc": 0.9018618866367915,
+              "tpr": 0.5300751879699248,
+              "pauc": 0.6545597128575018
+            },
+            {
+              "auc": 0.8873758998729591,
+              "tpr": 0.44150943396226416,
+              "pauc": 0.6190995914972217
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.687008749370135,
+            0.31299125062986516
+          ],
+          "auc": 0.9083373238861773,
+          "tpr": 0.5150565091975222,
+          "pauc": 0.6715226404699242,
+          "objective": 0.9340901493460534,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9358115084952595,
+              "tpr": 0.5735849056603773,
+              "pauc": 0.7409086170550491
+            },
+            {
+              "auc": 0.9017775111094445,
+              "tpr": 0.5300751879699248,
+              "pauc": 0.6545597128575018
+            },
+            {
+              "auc": 0.8874229520538277,
+              "tpr": 0.44150943396226416,
+              "pauc": 0.6190995914972217
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.6337737746356027,
+            0.3662262253643973
+          ],
+          "auc": 0.9084868040750984,
+          "tpr": 0.5112829242918617,
+          "pauc": 0.6697865396958198,
+          "objective": 0.9340509502896915,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9361400544447573,
+              "tpr": 0.569811320754717,
+              "pauc": 0.7352386639854676
+            },
+            {
+              "auc": 0.9024243901524385,
+              "tpr": 0.5300751879699248,
+              "pauc": 0.6550308213295679
+            },
+            {
+              "auc": 0.8868959676280995,
+              "tpr": 0.4339622641509434,
+              "pauc": 0.619090133772424
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "d0dd64cf71a6324b",
+            "7da8339c7253a664"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            },
+            {
+              "source": "additional",
+              "params": {
+                "family": "elastic_logistic",
+                "transform": "log_binary",
+                "C": 0.01,
+                "l1_ratio": 0.1
+              },
+              "id": "7da8339c7253a664"
+            }
+          ],
+          "weights": [
+            0.6212155300363073,
+            0.3625484596030114,
+            0.016236010360681247
+          ],
+          "auc": 0.9084741936987148,
+          "tpr": 0.5112829242918617,
+          "pauc": 0.6701014050777667,
+          "objective": 0.934038339913308,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9361025063362433,
+              "tpr": 0.569811320754717,
+              "pauc": 0.7357103738914228
+            },
+            {
+              "auc": 0.9024993906211913,
+              "tpr": 0.5300751879699248,
+              "pauc": 0.6550308213295679
+            },
+            {
+              "auc": 0.8868206841387098,
+              "tpr": 0.4339622641509434,
+              "pauc": 0.6195630200123092
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b",
+            "7991f4e27077762a",
+            "6bf731d7d5a999b6"
+          ],
+          "specs": [
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 10.0,
+                "family": "svm",
+                "gamma": 0.001,
+                "impute": "mean",
+                "standardize": true,
+                "transform": "log_binary"
+              },
+              "id": "6bf731d7d5a999b6"
+            }
+          ],
+          "weights": [
+            0.45655862176958206,
+            0.32130741831937043,
+            0.1899032545576386,
+            0.03223070535340885
+          ],
+          "auc": 0.9080052490964509,
+          "tpr": 0.5200501253132832,
+          "pauc": 0.6693385644348705,
+          "objective": 0.934007755362115,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9337369754998592,
+              "tpr": 0.5924528301886792,
+              "pauc": 0.7305781701146302
+            },
+            {
+              "auc": 0.9053025331408321,
+              "tpr": 0.5601503759398496,
+              "pauc": 0.6545974015352671
+            },
+            {
+              "auc": 0.8849762386486614,
+              "tpr": 0.4075471698113208,
+              "pauc": 0.622840121654714
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5740072028330789,
+            0.4259927971669212
+          ],
+          "auc": 0.9078570223181609,
+          "tpr": 0.5225800349931432,
+          "pauc": 0.6646336454434438,
+          "objective": 0.933986024067818,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.934581807941425,
+              "tpr": 0.6150943396226415,
+              "pauc": 0.7155400583127786
+            },
+            {
+              "auc": 0.9053775336095851,
+              "tpr": 0.5488721804511278,
+              "pauc": 0.6555254852252375
+            },
+            {
+              "auc": 0.8836117254034724,
+              "tpr": 0.4037735849056604,
+              "pauc": 0.6228353927923153
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.75,
+            0.25
+          ],
+          "auc": 0.9080969781147963,
+          "tpr": 0.5175769612711023,
+          "pauc": 0.6719939621856824,
+          "objective": 0.9339758261783514,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9354454144372477,
+              "tpr": 0.569811320754717,
+              "pauc": 0.7418426026688403
+            },
+            {
+              "auc": 0.9010743817148857,
+              "tpr": 0.5263157894736842,
+              "pauc": 0.6564394356610457
+            },
+            {
+              "auc": 0.8877711381922552,
+              "tpr": 0.45660377358490567,
+              "pauc": 0.6176998482271613
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5740072028330789,
+            0.4259927971669212
+          ],
+          "auc": 0.9078357063584083,
+          "tpr": 0.5225658485837235,
+          "pauc": 0.6658844362108843,
+          "objective": 0.9339639987875944,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9353703182202197,
+              "tpr": 0.6075471698113207,
+              "pauc": 0.7197665790701372
+            },
+            {
+              "auc": 0.9043462771642323,
+              "tpr": 0.5601503759398496,
+              "pauc": 0.6583662693117962
+            },
+            {
+              "auc": 0.883790523690773,
+              "tpr": 0.4,
+              "pauc": 0.6195204602507196
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.7525016281887539,
+            0.2474983718112461
+          ],
+          "auc": 0.9080750752275043,
+          "tpr": 0.5175769612711023,
+          "pauc": 0.6721515909323109,
+          "objective": 0.9339539232910594,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9354078663287337,
+              "tpr": 0.569811320754717,
+              "pauc": 0.7418426026688403
+            },
+            {
+              "auc": 0.9010556315976975,
+              "tpr": 0.5263157894736842,
+              "pauc": 0.6564394356610457
+            },
+            {
+              "auc": 0.8877617277560815,
+              "tpr": 0.45660377358490567,
+              "pauc": 0.6181727344670466
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9083371197757305,
+          "tpr": 0.5112876530950016,
+          "pauc": 0.6746578741471376,
+          "objective": 0.9339015024304805,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9358584436309021,
+              "tpr": 0.5660377358490566,
+              "pauc": 0.7408897486588109
+            },
+            {
+              "auc": 0.9019087619297621,
+              "tpr": 0.5263157894736842,
+              "pauc": 0.6620927373258394
+            },
+            {
+              "auc": 0.8872441537665271,
+              "tpr": 0.44150943396226416,
+              "pauc": 0.6209911364567627
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.25,
+            0.25,
+            0.5
+          ],
+          "auc": 0.9083272917902466,
+          "tpr": 0.5112498226698823,
+          "pauc": 0.663499630170738,
+          "objective": 0.9338897829237407,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9363465690415845,
+              "tpr": 0.5660377358490566,
+              "pauc": 0.7191910929848718
+            },
+            {
+              "auc": 0.9044119025743911,
+              "tpr": 0.556390977443609,
+              "pauc": 0.6498816057298851
+            },
+            {
+              "auc": 0.884223403754764,
+              "tpr": 0.41132075471698115,
+              "pauc": 0.6214261917974572
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b",
+            "7991f4e27077762a"
+          ],
+          "specs": [
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "auc": 0.9075732690193109,
+          "tpr": 0.5263205182768241,
+          "pauc": 0.6688733708292469,
+          "objective": 0.9338892949331521,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9330798836008636,
+              "tpr": 0.5924528301886792,
+              "pauc": 0.7357669790801374
+            },
+            {
+              "auc": 0.9050212813830086,
+              "tpr": 0.575187969924812,
+              "pauc": 0.6513184865696868
+            },
+            {
+              "auc": 0.8846186420740602,
+              "tpr": 0.41132075471698115,
+              "pauc": 0.6195346468379161
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.25,
+            0.25,
+            0.5
+          ],
+          "auc": 0.9081372595666868,
+          "tpr": 0.5150139499692629,
+          "pauc": 0.6663357298833166,
+          "objective": 0.9338879570651499,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9364122782314841,
+              "tpr": 0.5735849056603773,
+              "pauc": 0.721568510910886
+            },
+            {
+              "auc": 0.9033243957774736,
+              "tpr": 0.5639097744360902,
+              "pauc": 0.6555443295641201
+            },
+            {
+              "auc": 0.8846751046911024,
+              "tpr": 0.4075471698113208,
+              "pauc": 0.6218943491749436
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.6815251904406654,
+            0.3184748095593345
+          ],
+          "auc": 0.9082090298805473,
+          "tpr": 0.512540785927082,
+          "pauc": 0.6718325489752713,
+          "objective": 0.9338360691769014,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9359429268750586,
+              "tpr": 0.5735849056603773,
+              "pauc": 0.7371349378074075
+            },
+            {
+              "auc": 0.9014400090000563,
+              "tpr": 0.5300751879699248,
+              "pauc": 0.6587996891060971
+            },
+            {
+              "auc": 0.8872441537665271,
+              "tpr": 0.4339622641509434,
+              "pauc": 0.6195630200123092
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "6a485eb165928e9e",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.3,
+                "bins": 3,
+                "family": "advanced_bins",
+                "missing": "prior",
+                "presence": false,
+                "spacing": "quantile"
+              },
+              "id": "6a485eb165928e9e"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9080552612601487,
+          "tpr": 0.5150659668038019,
+          "pauc": 0.669790861764846,
+          "objective": 0.9338085596003388,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.936262085797428,
+              "tpr": 0.569811320754717,
+              "pauc": 0.7314649847378261
+            },
+            {
+              "auc": 0.9012806330039562,
+              "tpr": 0.5225563909774437,
+              "pauc": 0.6578480499925234
+            },
+            {
+              "auc": 0.8866230649790617,
+              "tpr": 0.4528301886792453,
+              "pauc": 0.6200595505641887
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "e8a793853f531b8c",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.3,
+                "bins": 3,
+                "family": "binned",
+                "standardize": false
+              },
+              "id": "e8a793853f531b8c"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9080552612601487,
+          "tpr": 0.5150659668038019,
+          "pauc": 0.669790861764846,
+          "objective": 0.9338085596003388,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.936262085797428,
+              "tpr": 0.569811320754717,
+              "pauc": 0.7314649847378261
+            },
+            {
+              "auc": 0.9012806330039562,
+              "tpr": 0.5225563909774437,
+              "pauc": 0.6578480499925234
+            },
+            {
+              "auc": 0.8866230649790617,
+              "tpr": 0.4528301886792453,
+              "pauc": 0.6200595505641887
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "d0dd64cf71a6324b",
+            "7991f4e27077762a"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9078581548700623,
+          "tpr": 0.5188159076937627,
+          "pauc": 0.672315913932945,
+          "objective": 0.9337989502547505,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.934027973340843,
+              "tpr": 0.5849056603773585,
+              "pauc": 0.7503711177685103
+            },
+            {
+              "auc": 0.9023493896836855,
+              "tpr": 0.5413533834586466,
+              "pauc": 0.6517471952792669
+            },
+            {
+              "auc": 0.8871971015856585,
+              "tpr": 0.43018867924528303,
+              "pauc": 0.6148294287510578
+            }
+          ]
+        }
+      ],
+      "best_singleton": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          }
+        ],
+        "weights": [
+          1.0
+        ],
+        "auc": 0.9063662718365095,
+        "tpr": 0.5113112971107013,
+        "pauc": 0.6786043036339992,
+        "objective": 0.9319318366920446,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.93297662630245,
+            "tpr": 0.6,
+            "pauc": 0.7504088545609866
+          },
+          {
+            "auc": 0.8970712316951981,
+            "tpr": 0.5075187969924813,
+            "pauc": 0.6625402903743023
+          },
+          {
+            "auc": 0.8890509575118807,
+            "tpr": 0.42641509433962266,
+            "pauc": 0.6228637659667083
+          }
+        ]
+      },
+      "best_eligible_singleton": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          }
+        ],
+        "weights": [
+          1.0
+        ],
+        "auc": 0.9063662718365095,
+        "tpr": 0.5113112971107013,
+        "pauc": 0.6786043036339992,
+        "objective": 0.9319318366920446,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.93297662630245,
+            "tpr": 0.6,
+            "pauc": 0.7504088545609866
+          },
+          {
+            "auc": 0.8970712316951981,
+            "tpr": 0.5075187969924813,
+            "pauc": 0.6625402903743023
+          },
+          {
+            "auc": 0.8890509575118807,
+            "tpr": 0.42641509433962266,
+            "pauc": 0.6228637659667083
+          }
+        ]
+      },
+      "pool_model_ids": [
+        "b339924a27dc96a7",
+        "95139a05a2e1149c",
+        "978592e7270d4e1e",
+        "6a485eb165928e9e",
+        "e8a793853f531b8c",
+        "b79f40d6223fa5bc",
+        "d0dd64cf71a6324b",
+        "8697e383cb2e9d12",
+        "8a52e18c85a8678f",
+        "7991f4e27077762a",
+        "4eda1a662ff10e56",
+        "eac61029fd0a17dd",
+        "2d58f34e9f0badb5",
+        "8faf28af70f723e1",
+        "7da8339c7253a664",
+        "285b2e0c5bb5fd1f",
+        "c18ca8f4f4274554",
+        "d4daf6dd4f1fa2f1",
+        "8cca77295c1a8dc8",
+        "63208d891c367596",
+        "6bf731d7d5a999b6",
+        "2288de69099f618d",
+        "29bdb1c914facfa5",
+        "7501f1e7a8f4ab60"
+      ],
+      "pool_families": [
+        "current:current_submission",
+        "archive:knn_logistic",
+        "archive:original",
+        "archive:advanced_bins",
+        "archive:binned",
+        "archive:iterative_logistic",
+        "archive:gb",
+        "archive:logistic",
+        "archive:pca_logistic",
+        "archive:interactions",
+        "additional:missingness_augmented_logistic",
+        "archive:selected_logistic",
+        "archive:mlp",
+        "archive:knn_svm",
+        "additional:elastic_logistic",
+        "archive:power",
+        "archive:spline",
+        "additional:polynomial_svm",
+        "additional:adam_mlp",
+        "archive:kernel_svm",
+        "archive:svm",
+        "additional:nystroem_rbf",
+        "archive:chi2_logistic",
+        "archive:lda"
+      ],
+      "excluded_models": [],
+      "counts": {
+        "singleton_models": 1932,
+        "probability_singletons": 1912,
+        "decision_singletons": 20,
+        "pool_models": 24,
+        "weight_vectors": 14476,
+        "blend_methods": 2,
+        "blend_evaluations": 28952,
+        "total_recipe_evaluations": 30884,
+        "auc_guard_passes": 1237
+      },
+      "protocol": {
+        "target_fpr": 0.01,
+        "objective": "mean_fold_auc + 0.05 * mean_fold_tpr",
+        "auc_guard": "mean_fold_auc >= current_submission_mean_fold_auc",
+        "pool_limit": 24,
+        "max_models_per_family": 2,
+        "random_sparse_draws": 5000,
+        "random_seed": 340,
+        "logit_clip": [
+          1e-06,
+          0.999999
+        ],
+        "stacking": "Not evaluated: supplied OOF scores are insufficient for clean additional meta-crossfitting.",
+        "interpretation": "Selection on these labels is exploratory; nested outer scoring must be separate."
+      },
+      "recipe_manifest": {
+        "file": "recipes_nested_2_compatible.npz",
+        "description": "Every singleton ID/method; each weight row applied to pool_model_ids in each listed blend method. Full specs in protocol.json.",
+        "model_scope": "No external libraries"
+      }
+    },
+    "all_libraries": {
+      "chosen": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7",
+          "95139a05a2e1149c",
+          "235bf85375458fff"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          },
+          {
+            "source": "archive",
+            "params": {
+              "C": 0.03,
+              "family": "knn_logistic",
+              "neighbors": 15,
+              "presence_weight": 0.25,
+              "scale": 10000.0,
+              "transform": "log_binary",
+              "weights": "uniform"
+            },
+            "id": "95139a05a2e1149c"
+          },
+          {
+            "source": "external",
+            "params": {
+              "family": "catboost",
+              "depth": 4,
+              "iterations": 200,
+              "l2_leaf_reg": 3.0,
+              "random_strength": 1.0,
+              "representation": "native"
+            },
+            "id": "235bf85375458fff"
+          }
+        ],
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "auc": 0.9098822642540605,
+        "tpr": 0.5138081051685819,
+        "pauc": 0.6668049086075785,
+        "objective": 0.9355726695124896,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.9347883225382522,
+            "tpr": 0.5924528301886792,
+            "pauc": 0.7272762007729439
+          },
+          {
+            "auc": 0.9061462884143026,
+            "tpr": 0.5225563909774437,
+            "pauc": 0.6597324838807881
+          },
+          {
+            "auc": 0.8887121818096269,
+            "tpr": 0.42641509433962266,
+            "pauc": 0.6134060411690032
+          }
+        ]
+      },
+      "baseline": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          }
+        ],
+        "weights": [
+          1.0
+        ],
+        "auc": 0.9063662718365095,
+        "tpr": 0.5113112971107013,
+        "pauc": 0.6786043036339992,
+        "objective": 0.9319318366920446,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.93297662630245,
+            "tpr": 0.6,
+            "pauc": 0.7504088545609866
+          },
+          {
+            "auc": 0.8970712316951981,
+            "tpr": 0.5075187969924813,
+            "pauc": 0.6625402903743023
+          },
+          {
+            "auc": 0.8890509575118807,
+            "tpr": 0.42641509433962266,
+            "pauc": 0.6228637659667083
+          }
+        ]
+      },
+      "top_recipes": [
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "auc": 0.9098822642540605,
+          "tpr": 0.5138081051685819,
+          "pauc": 0.6668049086075785,
+          "objective": 0.9355726695124896,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9347883225382522,
+              "tpr": 0.5924528301886792,
+              "pauc": 0.7272762007729439
+            },
+            {
+              "auc": 0.9061462884143026,
+              "tpr": 0.5225563909774437,
+              "pauc": 0.6597324838807881
+            },
+            {
+              "auc": 0.8887121818096269,
+              "tpr": 0.42641509433962266,
+              "pauc": 0.6134060411690032
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9102353994401285,
+          "tpr": 0.504998344918901,
+          "pauc": 0.6660018303570275,
+          "objective": 0.9354853166860736,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9366938890453393,
+              "tpr": 0.5660377358490566,
+              "pauc": 0.7229647722325134
+            },
+            {
+              "auc": 0.9059400371252321,
+              "tpr": 0.5263157894736842,
+              "pauc": 0.6569105441331119
+            },
+            {
+              "auc": 0.8880722721498141,
+              "tpr": 0.4226415094339623,
+              "pauc": 0.618130174705457
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.25,
+            0.25,
+            0.5
+          ],
+          "auc": 0.9103432498982923,
+          "tpr": 0.5012247600132406,
+          "pauc": 0.6617516858071838,
+          "objective": 0.9354044878989544,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9347977095653807,
+              "tpr": 0.5811320754716981,
+              "pauc": 0.7135683109058859
+            },
+            {
+              "auc": 0.9087338045862786,
+              "tpr": 0.5263157894736842,
+              "pauc": 0.6597371949655088
+            },
+            {
+              "auc": 0.8874982355432174,
+              "tpr": 0.39622641509433965,
+              "pauc": 0.6119495515501565
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "auc": 0.9102565481924153,
+          "tpr": 0.4999952711968601,
+          "pauc": 0.6644265052439298,
+          "objective": 0.9352563117522583,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9355674457899184,
+              "tpr": 0.5811320754716981,
+              "pauc": 0.7182854099654379
+            },
+            {
+              "auc": 0.9073275457971612,
+              "tpr": 0.5037593984962406,
+              "pauc": 0.6592378199851187
+            },
+            {
+              "auc": 0.8878746529901661,
+              "tpr": 0.41509433962264153,
+              "pauc": 0.6157562857812329
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "auc": 0.9100025798234551,
+          "tpr": 0.5025015368610205,
+          "pauc": 0.6660060985328601,
+          "objective": 0.9351276566665061,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9354735755186332,
+              "tpr": 0.5924528301886792,
+              "pauc": 0.7187854224657504
+            },
+            {
+              "auc": 0.9072994206213789,
+              "tpr": 0.5112781954887218,
+              "pauc": 0.662545001459023
+            },
+            {
+              "auc": 0.8872347433303533,
+              "tpr": 0.4037735849056604,
+              "pauc": 0.6166878716738069
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "auc": 0.9092455557665128,
+          "tpr": 0.5150565091975222,
+          "pauc": 0.6697911712674426,
+          "objective": 0.9349983812263889,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9350229982164648,
+              "tpr": 0.5886792452830188,
+              "pauc": 0.7291536061986456
+            },
+            {
+              "auc": 0.9059400371252321,
+              "tpr": 0.5300751879699248,
+              "pauc": 0.6653952077150231
+            },
+            {
+              "auc": 0.8867736319578412,
+              "tpr": 0.42641509433962266,
+              "pauc": 0.614824699888659
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "7991f4e27077762a"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "auc": 0.9090966419122114,
+          "tpr": 0.5175485884522627,
+          "pauc": 0.6682263295302978,
+          "objective": 0.9349740713348246,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9322256641321693,
+              "tpr": 0.5962264150943396,
+              "pauc": 0.737191542996122
+            },
+            {
+              "auc": 0.9064744154650967,
+              "tpr": 0.5488721804511278,
+              "pauc": 0.6559965936973036
+            },
+            {
+              "auc": 0.8885898461393685,
+              "tpr": 0.4075471698113208,
+              "pauc": 0.6114908518974679
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.25,
+            0.25,
+            0.5
+          ],
+          "auc": 0.909710111260804,
+          "tpr": 0.5049888873126211,
+          "pauc": 0.6647464255008217,
+          "objective": 0.9349595556264351,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.935135642542007,
+              "tpr": 0.5849056603773585,
+              "pauc": 0.7178231342576017
+            },
+            {
+              "auc": 0.908115050719067,
+              "tpr": 0.5338345864661654,
+              "pauc": 0.6621021594952807
+            },
+            {
+              "auc": 0.8858796405213382,
+              "tpr": 0.39622641509433965,
+              "pauc": 0.6143139827495828
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "978592e7270d4e1e",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "original"
+              },
+              "id": "978592e7270d4e1e"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.41740181658724,
+            0.1903343212407123,
+            0.39226386217204756
+          ],
+          "auc": 0.909965758920744,
+          "tpr": 0.4987374095616399,
+          "pauc": 0.6648958634844147,
+          "objective": 0.9349026293988261,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9359898620107012,
+              "tpr": 0.5735849056603773,
+              "pauc": 0.7182665415691996
+            },
+            {
+              "auc": 0.9063056644104026,
+              "tpr": 0.5037593984962406,
+              "pauc": 0.6582956030409863
+            },
+            {
+              "auc": 0.8876017503411283,
+              "tpr": 0.4188679245283019,
+              "pauc": 0.6181254458430581
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "95139a05a2e1149c",
+            "235bf85375458fff",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9096733296665146,
+          "tpr": 0.5037168392679813,
+          "pauc": 0.6608178897335136,
+          "objective": 0.9348591716299136,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9350229982164648,
+              "tpr": 0.5849056603773585,
+              "pauc": 0.7098040658563634
+            },
+            {
+              "auc": 0.9075056719104494,
+              "tpr": 0.5451127819548872,
+              "pauc": 0.656462991084649
+            },
+            {
+              "auc": 0.8864913188726298,
+              "tpr": 0.38113207547169814,
+              "pauc": 0.6161866122595285
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "d0dd64cf71a6324b"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9095899431273257,
+          "tpr": 0.5049936161157612,
+          "pauc": 0.6675743558838176,
+          "objective": 0.9348396239331137,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9366563409368253,
+              "tpr": 0.5660377358490566,
+              "pauc": 0.7224930623265582
+            },
+            {
+              "auc": 0.9053869086681792,
+              "tpr": 0.5300751879699248,
+              "pauc": 0.6602130145222955
+            },
+            {
+              "auc": 0.8867265797769727,
+              "tpr": 0.4188679245283019,
+              "pauc": 0.6200169908025991
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "7991f4e27077762a"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            }
+          ],
+          "weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "auc": 0.9096950753201195,
+          "tpr": 0.5011963871944012,
+          "pauc": 0.6636371484422191,
+          "objective": 0.9347548946798395,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9338026846897588,
+              "tpr": 0.5735849056603773,
+              "pauc": 0.7220402208168412
+            },
+            {
+              "auc": 0.9084806780042375,
+              "tpr": 0.5488721804511278,
+              "pauc": 0.6564677021693697
+            },
+            {
+              "auc": 0.8868018632663623,
+              "tpr": 0.38113207547169814,
+              "pauc": 0.6124035223404464
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "7991f4e27077762a"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            }
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "auc": 0.9088164144027872,
+          "tpr": 0.5175485884522627,
+          "pauc": 0.6691675529292311,
+          "objective": 0.9346938438254003,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9325823711630526,
+              "tpr": 0.5962264150943396,
+              "pauc": 0.7362481231842117
+            },
+            {
+              "auc": 0.9070744192151201,
+              "tpr": 0.5488721804511278,
+              "pauc": 0.6602365699458989
+            },
+            {
+              "auc": 0.8867924528301887,
+              "tpr": 0.4075471698113208,
+              "pauc": 0.6110179656575826
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "7991f4e27077762a"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9086782746935489,
+          "tpr": 0.5200832269352627,
+          "pauc": 0.6720045441791038,
+          "objective": 0.934682436040312,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9328827560311649,
+              "tpr": 0.5962264150943396,
+              "pauc": 0.7447389014914052
+            },
+            {
+              "auc": 0.90447752798455,
+              "tpr": 0.5338345864661654,
+              "pauc": 0.6573910747746193
+            },
+            {
+              "auc": 0.888674540064932,
+              "tpr": 0.43018867924528303,
+              "pauc": 0.6138836562712873
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "d0dd64cf71a6324b",
+            "7991f4e27077762a",
+            "4eda1a662ff10e56"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "gb",
+                "impute": "median",
+                "indicators": true,
+                "learning_rate": 0.1,
+                "max_depth": 2,
+                "min_samples_leaf": 10,
+                "n_estimators": 150
+              },
+              "id": "d0dd64cf71a6324b"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            },
+            {
+              "source": "additional",
+              "params": {
+                "family": "missingness_augmented_logistic",
+                "fraction": 0.05,
+                "C": 0.01
+              },
+              "id": "4eda1a662ff10e56"
+            }
+          ],
+          "weights": [
+            0.4211604432289437,
+            0.13795111737643306,
+            0.2216117288711459,
+            0.15133564773985086,
+            0.06794106278362658
+          ],
+          "auc": 0.9089056452242552,
+          "tpr": 0.5150470515912423,
+          "pauc": 0.6693272062379475,
+          "objective": 0.9346579978038173,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.935210738759035,
+              "tpr": 0.5886792452830188,
+              "pauc": 0.7362292547879735
+            },
+            {
+              "auc": 0.9042244014025088,
+              "tpr": 0.5375939849624061,
+              "pauc": 0.6536269180828109
+            },
+            {
+              "auc": 0.887281795511222,
+              "tpr": 0.4188679245283019,
+              "pauc": 0.6181254458430581
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9093986139018551,
+          "tpr": 0.5037546696931007,
+          "pauc": 0.6714948568776347,
+          "objective": 0.9345863473865101,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9348634187552802,
+              "tpr": 0.5584905660377358,
+              "pauc": 0.734738651485155
+            },
+            {
+              "auc": 0.9040650254064088,
+              "tpr": 0.5150375939849624,
+              "pauc": 0.6644341464320082
+            },
+            {
+              "auc": 0.8892673975438762,
+              "tpr": 0.4377358490566038,
+              "pauc": 0.6153117727157408
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "95139a05a2e1149c",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.03,
+                "family": "knn_logistic",
+                "neighbors": 15,
+                "presence_weight": 0.25,
+                "scale": 10000.0,
+                "transform": "log_binary",
+                "weights": "uniform"
+              },
+              "id": "95139a05a2e1149c"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "auc": 0.9089273620712405,
+          "tpr": 0.5125455147302218,
+          "pauc": 0.6696284618490722,
+          "objective": 0.9345546378077516,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9337839106355017,
+              "tpr": 0.5811320754716981,
+              "pauc": 0.7319649972381386
+            },
+            {
+              "auc": 0.9053587834923968,
+              "tpr": 0.5263157894736842,
+              "pauc": 0.6625638457979056
+            },
+            {
+              "auc": 0.8876393920858232,
+              "tpr": 0.43018867924528303,
+              "pauc": 0.6143565425111726
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "978592e7270d4e1e",
+            "235bf85375458fff"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "family": "original"
+              },
+              "id": "978592e7270d4e1e"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            }
+          ],
+          "weights": [
+            0.41740181658724,
+            0.1903343212407123,
+            0.39226386217204756
+          ],
+          "auc": 0.9094547185189127,
+          "tpr": 0.5012389464226604,
+          "pauc": 0.6661551047517812,
+          "objective": 0.9345166658400457,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9360743452548578,
+              "tpr": 0.569811320754717,
+              "pauc": 0.7187288172770357
+            },
+            {
+              "auc": 0.9060431627697673,
+              "tpr": 0.5150375939849624,
+              "pauc": 0.660665278655479
+            },
+            {
+              "auc": 0.8862466475321131,
+              "tpr": 0.4188679245283019,
+              "pauc": 0.6190712183228285
+            }
+          ]
+        },
+        {
+          "method": "logit",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "7991f4e27077762a"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.003,
+                "family": "interactions",
+                "features": 30,
+                "interaction_only": false
+              },
+              "id": "7991f4e27077762a"
+            }
+          ],
+          "weights": [
+            0.5,
+            0.25,
+            0.25
+          ],
+          "auc": 0.9083330753498146,
+          "tpr": 0.522589492599423,
+          "pauc": 0.6727904864873198,
+          "objective": 0.9344625499797857,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9327794987327513,
+              "tpr": 0.5962264150943396,
+              "pauc": 0.7433237717735396
+            },
+            {
+              "auc": 0.9046650291564322,
+              "tpr": 0.5413533834586466,
+              "pauc": 0.6625826901367882
+            },
+            {
+              "auc": 0.8875546981602598,
+              "tpr": 0.43018867924528303,
+              "pauc": 0.6124649975516315
+            }
+          ]
+        },
+        {
+          "method": "probability",
+          "model_ids": [
+            "b339924a27dc96a7",
+            "235bf85375458fff",
+            "6a485eb165928e9e"
+          ],
+          "specs": [
+            {
+              "source": "current",
+              "params": {
+                "family": "current_submission"
+              },
+              "id": "b339924a27dc96a7"
+            },
+            {
+              "source": "external",
+              "params": {
+                "family": "catboost",
+                "depth": 4,
+                "iterations": 200,
+                "l2_leaf_reg": 3.0,
+                "random_strength": 1.0,
+                "representation": "native"
+              },
+              "id": "235bf85375458fff"
+            },
+            {
+              "source": "archive",
+              "params": {
+                "C": 0.3,
+                "bins": 3,
+                "family": "advanced_bins",
+                "missing": "prior",
+                "presence": false,
+                "spacing": "quantile"
+              },
+              "id": "6a485eb165928e9e"
+            }
+          ],
+          "weights": [
+            0.6531855835918183,
+            0.26832405994609804,
+            0.07849035646208355
+          ],
+          "auc": 0.9092925236982863,
+          "tpr": 0.5025015368610205,
+          "pauc": 0.6719681598463446,
+          "objective": 0.9344176005413373,
+          "auc_guard_pass": true,
+          "folds": [
+            {
+              "auc": 0.9353797052473481,
+              "tpr": 0.5547169811320755,
+              "pauc": 0.734729217287036
+            },
+            {
+              "auc": 0.903277520484503,
+              "tpr": 0.5112781954887218,
+              "pauc": 0.6616027845148906
+            },
+            {
+              "auc": 0.8892203453630075,
+              "tpr": 0.44150943396226416,
+              "pauc": 0.6195724777371069
+            }
+          ]
+        }
+      ],
+      "best_singleton": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          }
+        ],
+        "weights": [
+          1.0
+        ],
+        "auc": 0.9063662718365095,
+        "tpr": 0.5113112971107013,
+        "pauc": 0.6786043036339992,
+        "objective": 0.9319318366920446,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.93297662630245,
+            "tpr": 0.6,
+            "pauc": 0.7504088545609866
+          },
+          {
+            "auc": 0.8970712316951981,
+            "tpr": 0.5075187969924813,
+            "pauc": 0.6625402903743023
+          },
+          {
+            "auc": 0.8890509575118807,
+            "tpr": 0.42641509433962266,
+            "pauc": 0.6228637659667083
+          }
+        ]
+      },
+      "best_eligible_singleton": {
+        "method": "probability",
+        "model_ids": [
+          "b339924a27dc96a7"
+        ],
+        "specs": [
+          {
+            "source": "current",
+            "params": {
+              "family": "current_submission"
+            },
+            "id": "b339924a27dc96a7"
+          }
+        ],
+        "weights": [
+          1.0
+        ],
+        "auc": 0.9063662718365095,
+        "tpr": 0.5113112971107013,
+        "pauc": 0.6786043036339992,
+        "objective": 0.9319318366920446,
+        "auc_guard_pass": true,
+        "folds": [
+          {
+            "auc": 0.93297662630245,
+            "tpr": 0.6,
+            "pauc": 0.7504088545609866
+          },
+          {
+            "auc": 0.8970712316951981,
+            "tpr": 0.5075187969924813,
+            "pauc": 0.6625402903743023
+          },
+          {
+            "auc": 0.8890509575118807,
+            "tpr": 0.42641509433962266,
+            "pauc": 0.6228637659667083
+          }
+        ]
+      },
+      "pool_model_ids": [
+        "b339924a27dc96a7",
+        "95139a05a2e1149c",
+        "978592e7270d4e1e",
+        "235bf85375458fff",
+        "6a485eb165928e9e",
+        "e8a793853f531b8c",
+        "b79f40d6223fa5bc",
+        "d0dd64cf71a6324b",
+        "8697e383cb2e9d12",
+        "8a52e18c85a8678f",
+        "7991f4e27077762a",
+        "4eda1a662ff10e56",
+        "eac61029fd0a17dd",
+        "2d58f34e9f0badb5",
+        "8faf28af70f723e1",
+        "7da8339c7253a664",
+        "285b2e0c5bb5fd1f",
+        "c18ca8f4f4274554",
+        "d4daf6dd4f1fa2f1",
+        "8cca77295c1a8dc8",
+        "63208d891c367596",
+        "6bf731d7d5a999b6",
+        "94c00fe52ea42ee1",
+        "2288de69099f618d"
+      ],
+      "pool_families": [
+        "current:current_submission",
+        "archive:knn_logistic",
+        "archive:original",
+        "external:catboost",
+        "archive:advanced_bins",
+        "archive:binned",
+        "archive:iterative_logistic",
+        "archive:gb",
+        "archive:logistic",
+        "archive:pca_logistic",
+        "archive:interactions",
+        "additional:missingness_augmented_logistic",
+        "archive:selected_logistic",
+        "archive:mlp",
+        "archive:knn_svm",
+        "additional:elastic_logistic",
+        "archive:power",
+        "archive:spline",
+        "additional:polynomial_svm",
+        "additional:adam_mlp",
+        "archive:kernel_svm",
+        "archive:svm",
+        "external:xgboost",
+        "additional:nystroem_rbf"
+      ],
+      "excluded_models": [],
+      "counts": {
+        "singleton_models": 2076,
+        "probability_singletons": 2056,
+        "decision_singletons": 20,
+        "pool_models": 24,
+        "weight_vectors": 14476,
+        "blend_methods": 2,
+        "blend_evaluations": 28952,
+        "total_recipe_evaluations": 31028,
+        "auc_guard_passes": 3853
+      },
+      "protocol": {
+        "target_fpr": 0.01,
+        "objective": "mean_fold_auc + 0.05 * mean_fold_tpr",
+        "auc_guard": "mean_fold_auc >= current_submission_mean_fold_auc",
+        "pool_limit": 24,
+        "max_models_per_family": 2,
+        "random_sparse_draws": 5000,
+        "random_seed": 340,
+        "logit_clip": [
+          1e-06,
+          0.999999
+        ],
+        "stacking": "Not evaluated: supplied OOF scores are insufficient for clean additional meta-crossfitting.",
+        "interpretation": "Selection on these labels is exploratory; nested outer scoring must be separate."
+      },
+      "recipe_manifest": {
+        "file": "recipes_nested_2_all_libraries.npz",
+        "description": "Every singleton ID/method; each weight row applied to pool_model_ids in each listed blend method. Full specs in protocol.json.",
+        "model_scope": "All available libraries"
+      }
+    }
+  },
+  "audit": {
+    "expected_models": 2076,
+    "successful_models": 2076,
+    "failed_models": 0,
+    "failures": [],
+    "models_with_warnings": 53,
+    "warnings": [
+      {
+        "id": "9175a2fa7e5c7a50",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "transform": "binary"
+          },
+          "id": "9175a2fa7e5c7a50"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "80910797454141e5",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "transform": "log_binary"
+          },
+          "id": "80910797454141e5"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "62f3890b3c1e0b6a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "transform": "log_binary"
+          },
+          "id": "62f3890b3c1e0b6a"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "cab5952570bd6c31",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "cab5952570bd6c31"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "845fcc2d57352c6f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32,
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "845fcc2d57352c6f"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "1c3c4e10e220260d",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 0.1,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              8
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "1c3c4e10e220260d"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "3d319b653f8b279f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "3d319b653f8b279f"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "e166958b06d103ff",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32,
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "e166958b06d103ff"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "8f2a645e63289c91",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32,
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "8f2a645e63289c91"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "f6753b4195af94bc",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "binary"
+          },
+          "id": "f6753b4195af94bc"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "7092e68a242e729a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 1.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "7092e68a242e729a"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "1470de501a03b85b",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32,
+              16
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "1470de501a03b85b"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "5d58bd8b9eb1debf",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "alpha": 10.0,
+            "family": "mlp",
+            "hidden_layer_sizes": [
+              32
+            ],
+            "max_fun": 50000,
+            "max_iter": 3000,
+            "transform": "log_binary"
+          },
+          "id": "5d58bd8b9eb1debf"
+        },
+        "warnings": [
+          "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ]
+      },
+      {
+        "id": "75d479cb78c6c8a2",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "75d479cb78c6c8a2"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "8f4737352f919a2d",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "8f4737352f919a2d"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "4a854e02077da506",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "4a854e02077da506"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "753349500322bbe1",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "753349500322bbe1"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "16d4c2390ce32159",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "16d4c2390ce32159"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "7ec2ee57c6d11096",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "7ec2ee57c6d11096"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "45ff935c88164906",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "45ff935c88164906"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "77e8544bcffbc6de",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.003,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "77e8544bcffbc6de"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "f699dbde15a7f0d3",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "f699dbde15a7f0d3"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "b79f40d6223fa5bc",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "b79f40d6223fa5bc"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "531e9b23a3093b93",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "531e9b23a3093b93"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "9d61ee92f7f7381a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "9d61ee92f7f7381a"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "7c6d91ae2e28b991",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "7c6d91ae2e28b991"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "cd1a6f15de6898d4",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "cd1a6f15de6898d4"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "84b99fca4eb79d98",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "84b99fca4eb79d98"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "61e23d3cfc5df71a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.01,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "61e23d3cfc5df71a"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "f69113bd36a3be60",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "f69113bd36a3be60"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "187fde84028dda36",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "187fde84028dda36"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "ed36a4904325a554",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "ed36a4904325a554"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "c3a2130d4c308c91",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "c3a2130d4c308c91"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "0a108742d01eaad5",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "0a108742d01eaad5"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "231e835b1d0ef6bb",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "231e835b1d0ef6bb"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "b9fcff4b3c48f3cc",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "b9fcff4b3c48f3cc"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "7c6003642763a353",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.03,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "7c6003642763a353"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "400704fc4c38d96f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "400704fc4c38d96f"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "599b6e2272512b5f",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "599b6e2272512b5f"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "65a720ce3dfe5fad",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "65a720ce3dfe5fad"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "a8e5d80e6613a7e1",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "a8e5d80e6613a7e1"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "46640d9384607dcd",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "46640d9384607dcd"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "ebbb75f2723b98be",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "ebbb75f2723b98be"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "da9f1636fb739329",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "da9f1636fb739329"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "45f587f177238b2a",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.1,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "45f587f177238b2a"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "76248c4e20943be2",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "76248c4e20943be2"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "ec497c2dbcbcdf42",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "ec497c2dbcbcdf42"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "5aae500b268ff953",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "5aae500b268ff953"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "38f6981d8d3f4c36",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "bayesian",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "38f6981d8d3f4c36"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "0f1b14da6ad89f02",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "0f1b14da6ad89f02"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "5fc59608655f5851",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": false,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "5fc59608655f5851"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "70fc0bcf13cb5b4d",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log"
+          },
+          "id": "70fc0bcf13cb5b4d"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      },
+      {
+        "id": "1551832d397832c4",
+        "spec": {
+          "source": "archive",
+          "params": {
+            "C": 0.3,
+            "estimator": "trees",
+            "family": "iterative_logistic",
+            "impute_iter": 5,
+            "indicators": true,
+            "nearest_features": 15,
+            "transform": "log_binary"
+          },
+          "id": "1551832d397832c4"
+        },
+        "warnings": [
+          "[IterativeImputer] Early stopping criterion not reached."
+        ]
+      }
+    ],
+    "warning_counts": {
+      "lbfgs failed to converge after 1500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html": 3,
+      "lbfgs failed to converge after 3000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=3000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html": 10,
+      "[IterativeImputer] Early stopping criterion not reached.": 40
+    }
+  },
+  "protocol_sha256": "602a731bc5d3408ffef8caaf4693cdc1f7951b5b7526f8cfb27e54c0a4934c22",
+  "selector_sha256": "769bc49a40ae9ed3b85844bea34765eff6bc9cc9c4a795905221e0894007cb55",
+  "interpretation": "Scores in these recipes are inner/development selection scores, not evaluation on the outer fold or final hidden test."
+}

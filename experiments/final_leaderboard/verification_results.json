@@ -1,0 +1,13 @@
+{
+  "full_3000_row_fit_seconds": 2.3704430828802288,
+  "finite_probabilities": true,
+  "deterministic": true,
+  "batch_independent": true,
+  "inputs_unchanged": true,
+  "all_missing_column": true,
+  "empty_test": true,
+  "single_class": true,
+  "unmodified_final_evaluator_matches_confirmation": true,
+  "classifier_equals_frozen_baseline": true,
+  "note": "Full-size probe checks validate the API only, not predictive performance. Evaluator smoke test reuses the already-scored internal confirmation split."
+}

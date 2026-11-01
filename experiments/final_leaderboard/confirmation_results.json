@@ -1,0 +1,32 @@
+{
+  "training_rows": 2500,
+  "confirmation_rows": 500,
+  "ham_rows": 309,
+  "spam_rows": 191,
+  "metrics": {
+    "baseline": {
+      "auc": 0.8846642606618207,
+      "tpr": 0.2774869109947644
+    },
+    "candidate": {
+      "auc": 0.8867652789779563,
+      "tpr": 0.2617801047120419
+    }
+  },
+  "candidate_minus_baseline": {
+    "auc": 0.0021010183161356277,
+    "tpr": -0.01570680628272253
+  },
+  "paired_bootstrap_95_percent_intervals": {
+    "auc": [
+      -0.0008641285009911598,
+      0.005337264270828035
+    ],
+    "tpr": [
+      -0.036649214659685875,
+      0.05235602094240838
+    ]
+  },
+  "decision": "retain_baseline",
+  "limitation": "Internal comparison on released data; cannot establish final leaderboard rank. The gate uses these labels for a retention decision. Bootstrap intervals do not account for model selection, refitting, or dataset shift."
+}

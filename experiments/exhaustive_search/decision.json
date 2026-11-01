@@ -1,0 +1,21 @@
+{
+  "decision": "retain_current_submission",
+  "production_sha256": "e9cb1babf48b08607c9b54618cc9b468beb77a3e6e2065d1a4a6be009a840c8e",
+  "production_unchanged": true,
+  "repeated_gate_passed": false,
+  "nested_gate_passed": false,
+  "reason": "Selected challengers improve AUC but reduce TPR at FPR=0.01 in both nested selection and repeated fixed-recipe checks. No tested challenger pipeline strictly beats both baseline metrics in the broad screen.",
+  "scope": {
+    "serialized_configurations": 2116,
+    "unique_pipelines": 2076,
+    "family_labels": 47,
+    "configuration_fold_fits": 24912,
+    "screen_blend_evaluations_per_procedure": 28952,
+    "outer_folds": 3,
+    "inner_folds_per_outer": 3,
+    "fixed_recipe_stability_folds": 25
+  },
+  "candidate_file": "candidate_classifier.py",
+  "candidate_status": "Experimental alternative with AUC/TPR tradeoff, not recommended for current final submission.",
+  "hidden_test_evaluated": false
+}
